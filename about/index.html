@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> about &middot; xbuf </title>
+
+  
+  <link rel="stylesheet" href="http://www.xbuf.org//css/poole.css">
+  <link rel="stylesheet" href="http://www.xbuf.org//css/syntax.css">
+  <link rel="stylesheet" href="http://www.xbuf.org//css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.xbuf.org/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://www.xbuf.org/favicon.ico">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="xbuf" />
+</head>
+
+<body>
+
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>xbuf</h1>
+      <p class="lead">
+       An exchange format for 3D scenes, models, animations, … 
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="http://www.xbuf.org/">Home</a> </li>
+      
+    </ul>
+
+    <p>Public domain (CC0-1.0)</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+<div class="post">
+  <h1>about</h1>
+  <span class="post-date">Sat, Mar 28, 2015</span>
+      
+
+<p><strong>xbuf</strong> is an exchange format usable to store scene, models, animations, &hellip; in file or to edit scene over network. It takes inspiration from :</p>
+
+<ul>
+<li><a href="http://opengex.org/">OpenGEX</a> : as data to managed, and doc fragment I copied</li>
+<li><a href="https://github.com/KhronosGroup/glTF">glTF</a> : some discussions and some goals</li>
+<li><a href="http://www.blender.org/api/blender_python_api_2_72_release/">blender api</a> : how blender manages data</li>
+<li>Entity-Component-System (ECS), RDF : as way to extends and to link data</li>
+</ul>
+
+<p>xbuf is a binary format using <a href="https://developers.google.com/protocol-buffers/">Protocol Buffers (aka protobuf)</a> to generate source code for java, C++, python,&hellip; to read and write it. Then it&rsquo;s more developer friendly than json, oddl, xml, or any text based dialect, without loosing flexibility via <strong>extensions</strong>.</p>
+
+<p>The project would like to be an <strong>Community Format</strong> shared by several engines, tools. It&rsquo;s <strong>Open</strong> to any contributions (code, discussion, issues, tools, &hellip;).</p>
+
+<p>License : <a href="http://creativecommons.org/publicdomain/zero/1.0/">Public domain (CC0-1.0)</a></p>
+
+<p><a href="http://xkcd.com/927/"><img src="http://imgs.xkcd.com/comics/standards.png" alt="Standards" />
+</a></p>
+
+<h1 id="use-cases:6083a88ee3411b0d17ce02d738f69d47">Use cases</h1>
+
+<ul>
+<li>create importer/exporter for modeler, game engine, tool (optimizer, asset pipes&hellip;)</li>
+<li>create network exchange format between connected tool (eg : modeler &lt;-&gt; game engine with realtime rendering)</li>
+</ul>
+
+<p><div class="embed video-player">
+  <iframe class="youtube-player" type="text/html" width="640" height="385" src="http://www.youtube.com/embed/3pQd65_dkeM" allowfullscreen frameborder="0">
+  </iframe>
+</div>
+</p>
+
+<h1 id="download:6083a88ee3411b0d17ce02d738f69d47">Download</h1>
+
+<p>You can download files from <a href="https://bintray.com/package/files/davidb/maven/xbuf">my repo</a></p>
+
+<ul>
+<li>xbuf-x.y.z-proto.zip : archive with .proto files</li>
+<li>xbuf-x.y.z-cpp.zip : archive with generated C++ source</li>
+<li>xbuf-x.y.z-python.zip : archive with the xbuf modules (generated python)</li>
+<li>xbuf-x.y.z.jar : the java archive with generated .class</li>
+</ul>
+
+<h1 id="documentation:6083a88ee3411b0d17ce02d738f69d47">Documentation</h1>
+
+<ul>
+<li><a href="https://github.com/davidB/xbuf/wiki/Motivations">Motivations</a></li>
+<li><a href="https://github.com/davidB/xbuf/wiki/FAQ">FAQ</a></li>
+<li><a href="https://github.com/davidB/xbuf/wiki/API">API</a></li>
+<li><a href="https://github.com/davidB/xbuf/wiki/Extensions-List">Extensions List</a></li>
+<li><a href="https://github.com/davidB/xbuf/wiki/Tools">Tools</a></li>
+</ul>
+
+<h1 id="links:6083a88ee3411b0d17ce02d738f69d47">Links</h1>
+
+<ul>
+<li>discussions about xbuf in communities:
+
+<ul>
+<li>jMonkeyEngine : <a href="http://hub.jmonkeyengine.org/t/xbuf-format-a-developper-friendly-game-exchange-format-for-3d-data/31130/19">Xbuf format – A developper friendly game exchange format for 3d data</a></li>
+<li>Ogre3D : <a href="http://www.ogre3d.org/forums/viewtopic.php?f=1&amp;t=82801&amp;p=514877#p514877">Ogre Forums • View topic - xbuf: call for help for an other 3D format</a></li>
+</ul></li>
+<li>discussions about open format for 3D:
+
+<ul>
+<li><a href="http://blenderartists.org/forum/showthread.php?348506-Alternative-to-FBX/page3">Blender Artists: Alternative-to-FBX</a></li>
+</ul></li>
+</ul>
+
+</div>
+</div>
+
+  </body>
+</html>
