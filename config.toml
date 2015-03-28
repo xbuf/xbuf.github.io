@@ -5,6 +5,6 @@ theme = "hyde"
 canonifyurls = true
 
 [params]
-  Description = "An exchange format usable to store scene, models, animations, …"
+  Description = "An exchange format for 3D scenes, models, animations, …"
   Author = "David Bernard"
   Copyright = "Public domain (CC0-1.0)"
