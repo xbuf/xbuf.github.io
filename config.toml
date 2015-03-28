@@ -1,0 +1,10 @@
+baseurl = "http://www.xbuf.org/"
+languageCode = "en-us"
+title = "xbuf"
+theme = "hyde"
+canonifyurls = true
+
+[params]
+  Description = "An exchange format usable to store scene, models, animations, …"
+  Author = "David Bernard"
+  Copyright = "Public domain (CC0-1.0)"
