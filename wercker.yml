@@ -25,3 +25,11 @@ build:
         code: |
           echo "hello world!"
     - arjen/hugo-build@1.4.0
+
+deploy:
+  steps:
+    - uetchy/gh-pages:
+        token: $GITHUB_TOKEN
+        repo: xbuf/xbuf.github.io
+        path: public
+        domain: xbuf.org
