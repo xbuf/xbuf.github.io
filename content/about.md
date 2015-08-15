@@ -37,11 +37,11 @@ You can download files from [my repo](https://bintray.com/package/files/davidb/m
 
 # Documentation
 
-* [Motivations](https://github.com/davidB/xbuf/wiki/Motivations)
-* [FAQ](https://github.com/davidB/xbuf/wiki/FAQ)
-* [API](https://github.com/davidB/xbuf/wiki/API)
-* [Extensions List](https://github.com/davidB/xbuf/wiki/Extensions-List)
-* [Tools](https://github.com/davidB/xbuf/wiki/Tools)
+* [Motivations](motivations)
+* [FAQ](faq)
+* [API](api)
+* [Extensions List](extensions-list)
+* [Tools](tools)
 
 # Links
 
