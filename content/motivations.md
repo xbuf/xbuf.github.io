@@ -1,3 +1,9 @@
++++
+date = "2015-02-16T00:00:00+01:00"
+draft = false
+title = "Motivations"
++++
+
 # Why ?
 
 * .proto is used as spec and to generate generator/parser for several languages. No need to write your own (you can if you want). And tool, game, engine spend less time on creating generator/parser. Developper only need to create adapter, converter into their own format (far easier than creating generator + parser).

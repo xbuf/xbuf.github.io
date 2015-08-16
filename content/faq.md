@@ -1,6 +1,12 @@
-## What ...
++++
+date = "2015-02-18T00:00:00+01:00"
+draft = false
+title = "FAQ"
++++
 
-### What are the units, coordinate system ?
+# What ...
+
+## What are the units, coordinate system ?
 
 * Coordinate system : Right Handled
   * object : Y up, Z forward, X left
@@ -14,13 +20,13 @@
 
 I try to collect same data for game engine, tools, to help create importer/exporter. Help me to complete the [table](https://docs.google.com/spreadsheets/d/19FscoJzidZKF6Iqs1bqELv57Ds-t_dAbMD_XflrIUuk/edit?usp=sharing)
 
-### What is the file extension ?
+## What is the file extension ?
 
 ```
 .xbuf
 ```
 
-### What is the future of the format ?
+## What is the future of the format ?
 
 I don't know ;-)
 
@@ -30,9 +36,9 @@ But there some ideas :
 * ingrate compression  like [glTF: Open 3D Graphics Compression](https://github.com/KhronosGroup/glTF/wiki/Open-3D-Graphics-Compression)
 * define an archive format to store complementary data : textures, shaders, ...
 
-## How ...
+# How ...
 
-### How can I protect my content ?
+## How can I protect my content ?
 
 1. change the file extension
 2. modify the file content, example of modifications (can be combined) :
@@ -42,20 +48,20 @@ But there some ideas :
   * wrap into an archive (but without the reguler extension): tar, zip,...
   * compress (but without the reguler extension) : snappy, gzip, bzip, lzma,...
 
-## Why ...
+# Why ...
 
-### Why not [OpenGEX](http://opengex.org/) ?
+## Why not [OpenGEX](http://opengex.org/) ?
 
 * except if you use [OpenGEX Import Template](http://opengex.org/OpenGex-Import.zip) (C++ only), it requires to write parser and low level writer, and writing good parser is hard.
 * text based, not optimal for network and realtime update
 * importer should support several metrics, orientation (Z up, Y up,...)
 
-### Why not [glTF](https://github.com/KhronosGroup/glTF) ?
+## Why not [glTF](https://github.com/KhronosGroup/glTF) ?
 
 * moving and heavy spec ;-)
 * json based, require to write "semantic" parser, converter.
 
-### Why no configurable metrics (like in OpenGEX) ?
+## Why no configurable metrics (like in OpenGEX) ?
 
 * to simplify the loader (less combinaison, less confusion) : *"convention over configuration"*
 * to ease share and merge of data
@@ -63,12 +69,12 @@ But there some ideas :
 
 see discussion [glTF : unify scenes axis-up](https://github.com/KhronosGroup/glTF/issues/22)
 
-## Why no configurable up ?
+# Why no configurable up ?
 
 * see *Why no configurable metrics (like in OpenGEX) ?* (above)
 * To avoid branch in loader code like in this [response on unity forum](http://answers.unity3d.com/questions/46589/zup-yup-xup-handedness-space-conversion.html)
 
-### Why no transform matrix, variant of Rotation, Scale ?
+## Why no transform matrix, variant of Rotation, Scale ?
 
 * see *Why no configurable metrics (like in OpenGEX) ?* (above)
 * I don't want too freedom (simple loader, more work on exporter), so I have to choose between matrix or translation / rotation / scale

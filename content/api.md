@@ -1,3 +1,9 @@
++++
+date = "2015-02-15T00:00:00+01:00"
+draft = false
+title = "API"
++++
+
 > It's a generated api from <a href="https://github.com/davidB/pgex/tree/master/src/main/proto">*.proto</a>.
 > IMHO, the files *.proto are more readable. And always more uptodate.
 
