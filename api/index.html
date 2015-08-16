@@ -1,0 +1,2661 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+  <title> API &middot; xbuf </title>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+  <link rel="stylesheet" href="http://www.xbuf.org//css/foundation.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="http://www.xbuf.org//css/app.css" />
+  
+  <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.xbuf.org/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://www.xbuf.org/favicon.ico">
+
+  
+  <script src="http://www.xbuf.org//js/vendor/modernizr.js"></script>
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="xbuf" />
+</head>
+
+<body>
+<div class="">
+
+<div class="small-9 small-push-3 columns">
+
+<header class="row">
+  <div class="small-12 columns">
+    <h1 class="text-center"><a href="http://www.xbuf.org/api/">API</a></h1>
+    <div id="toc" class="small-6 medium-4 columns">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#protocol-documentation:00e71df22262087fd8ad820708997657">Protocol Documentation</a>
+<ul>
+<li><a href="#table-of-contents:00e71df22262087fd8ad820708997657">Table of Contents</a></li>
+<li><a href="#animations-kf-proto:00e71df22262087fd8ad820708997657">animations_kf.proto</a>
+<ul>
+<li><a href="#animationkf:00e71df22262087fd8ad820708997657">AnimationKF</a></li>
+<li><a href="#bezierparams:00e71df22262087fd8ad820708997657">BezierParams</a></li>
+<li><a href="#clip:00e71df22262087fd8ad820708997657">Clip</a></li>
+<li><a href="#colorkf:00e71df22262087fd8ad820708997657">ColorKF</a></li>
+<li><a href="#keypoints:00e71df22262087fd8ad820708997657">KeyPoints</a></li>
+<li><a href="#quaternionkf:00e71df22262087fd8ad820708997657">QuaternionKF</a></li>
+<li><a href="#transformkf:00e71df22262087fd8ad820708997657">TransformKF</a></li>
+<li><a href="#vec3kf:00e71df22262087fd8ad820708997657">Vec3KF</a></li>
+<li><a href="#keypoints-interpolationfct:00e71df22262087fd8ad820708997657">KeyPoints.InterpolationFct</a></li>
+</ul></li>
+<li><a href="#custom-params-proto:00e71df22262087fd8ad820708997657">custom_params.proto</a>
+<ul>
+<li><a href="#customparam:00e71df22262087fd8ad820708997657">CustomParam</a></li>
+<li><a href="#customparamlist:00e71df22262087fd8ad820708997657">CustomParamList</a></li>
+</ul></li>
+<li><a href="#cmds-proto:00e71df22262087fd8ad820708997657">cmds.proto</a>
+<ul>
+<li><a href="#changeassetfolders:00e71df22262087fd8ad820708997657">ChangeAssetFolders</a></li>
+<li><a href="#cmd:00e71df22262087fd8ad820708997657">Cmd</a></li>
+<li><a href="#deletedata:00e71df22262087fd8ad820708997657">DeleteData</a></li>
+<li><a href="#seteye:00e71df22262087fd8ad820708997657">SetEye</a></li>
+<li><a href="#seteye-projmode:00e71df22262087fd8ad820708997657">SetEye.ProjMode</a></li>
+</ul></li>
+<li><a href="#datas-proto:00e71df22262087fd8ad820708997657">datas.proto</a>
+<ul>
+<li><a href="#attenuation:00e71df22262087fd8ad820708997657">Attenuation</a></li>
+<li><a href="#attenuationinverse:00e71df22262087fd8ad820708997657">AttenuationInverse</a></li>
+<li><a href="#attenuationinversesquare:00e71df22262087fd8ad820708997657">AttenuationInverseSquare</a></li>
+<li><a href="#attenuationlinear:00e71df22262087fd8ad820708997657">AttenuationLinear</a></li>
+<li><a href="#attenuationsmooth:00e71df22262087fd8ad820708997657">AttenuationSmooth</a></li>
+<li><a href="#bone:00e71df22262087fd8ad820708997657">Bone</a></li>
+<li><a href="#color:00e71df22262087fd8ad820708997657">Color</a></li>
+<li><a href="#data:00e71df22262087fd8ad820708997657">Data</a></li>
+<li><a href="#floatbuffer:00e71df22262087fd8ad820708997657">FloatBuffer</a></li>
+<li><a href="#geometry:00e71df22262087fd8ad820708997657">Geometry</a></li>
+<li><a href="#indexarray:00e71df22262087fd8ad820708997657">IndexArray</a></li>
+<li><a href="#light:00e71df22262087fd8ad820708997657">Light</a></li>
+<li><a href="#mat4:00e71df22262087fd8ad820708997657">Mat4</a></li>
+<li><a href="#material:00e71df22262087fd8ad820708997657">Material</a></li>
+<li><a href="#mesh:00e71df22262087fd8ad820708997657">Mesh</a></li>
+<li><a href="#quaternion:00e71df22262087fd8ad820708997657">Quaternion</a></li>
+<li><a href="#relation:00e71df22262087fd8ad820708997657">Relation</a></li>
+<li><a href="#skeleton:00e71df22262087fd8ad820708997657">Skeleton</a></li>
+<li><a href="#tobject:00e71df22262087fd8ad820708997657">TObject</a></li>
+<li><a href="#texture:00e71df22262087fd8ad820708997657">Texture</a></li>
+<li><a href="#texture2dinline:00e71df22262087fd8ad820708997657">Texture2DInline</a></li>
+<li><a href="#transform:00e71df22262087fd8ad820708997657">Transform</a></li>
+<li><a href="#uintbuffer:00e71df22262087fd8ad820708997657">UintBuffer</a></li>
+<li><a href="#vec2:00e71df22262087fd8ad820708997657">Vec2</a></li>
+<li><a href="#vec3:00e71df22262087fd8ad820708997657">Vec3</a></li>
+<li><a href="#vec4:00e71df22262087fd8ad820708997657">Vec4</a></li>
+<li><a href="#vertexarray:00e71df22262087fd8ad820708997657">VertexArray</a></li>
+<li><a href="#light-kind:00e71df22262087fd8ad820708997657">Light.Kind</a></li>
+<li><a href="#mesh-primitive:00e71df22262087fd8ad820708997657">Mesh.Primitive</a></li>
+<li><a href="#texture2dinline-format:00e71df22262087fd8ad820708997657">Texture2DInline.Format</a></li>
+<li><a href="#vertexarray-attrib:00e71df22262087fd8ad820708997657">VertexArray.Attrib</a></li>
+</ul></li>
+<li><a href="#scalar-value-types:00e71df22262087fd8ad820708997657">Scalar Value Types</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  </div>
+</header>
+
+<div class="row">
+  <div class="small-12 columns">
+    <span class="post-date">Sun, Feb 15, 2015</span>
+    
+
+<blockquote>
+<p>It&rsquo;s a generated api from <a href="https://github.com/davidB/pgex/tree/master/src/main/proto">*.proto</a>.
+IMHO, the files *.proto are more readable. And always more uptodate.</p>
+</blockquote>
+
+<h1 id="protocol-documentation:00e71df22262087fd8ad820708997657">Protocol Documentation</h1>
+
+<p><a name="top"/></p>
+
+<h2 id="table-of-contents:00e71df22262087fd8ad820708997657">Table of Contents</h2>
+
+<ul>
+<li><a href="#animations_kf.proto">animations_kf.proto</a>
+
+<ul>
+<li><a href="#xbuf_ext.AnimationKF">AnimationKF</a></li>
+<li><a href="#xbuf_ext.BezierParams">BezierParams</a></li>
+<li><a href="#xbuf_ext.Clip">Clip</a></li>
+<li><a href="#xbuf_ext.ColorKF">ColorKF</a></li>
+<li><a href="#xbuf_ext.KeyPoints">KeyPoints</a></li>
+<li><a href="#xbuf_ext.QuaternionKF">QuaternionKF</a></li>
+<li><a href="#xbuf_ext.TransformKF">TransformKF</a></li>
+<li><a href="#xbuf_ext.Vec3KF">Vec3KF</a></li>
+<li><a href="#xbuf_ext.KeyPoints.InterpolationFct">KeyPoints.InterpolationFct</a></li>
+</ul></li>
+<li><a href="#custom_params.proto">custom_params.proto</a>
+
+<ul>
+<li><a href="#xbuf_ext.CustomParam">CustomParam</a></li>
+<li><a href="#xbuf_ext.CustomParamList">CustomParamList</a></li>
+</ul></li>
+<li><a href="#cmds.proto">cmds.proto</a>
+
+<ul>
+<li><a href="#xbuf.ChangeAssetFolders">ChangeAssetFolders</a></li>
+<li><a href="#xbuf.Cmd">Cmd</a></li>
+<li><a href="#xbuf.DeleteData">DeleteData</a></li>
+<li><a href="#xbuf.SetEye">SetEye</a></li>
+<li><a href="#xbuf.SetEye.ProjMode">SetEye.ProjMode</a></li>
+</ul></li>
+<li><a href="#datas.proto">datas.proto</a>
+
+<ul>
+<li><a href="#xbuf.Attenuation">Attenuation</a></li>
+<li><a href="#xbuf.AttenuationInverse">AttenuationInverse</a></li>
+<li><a href="#xbuf.AttenuationInverseSquare">AttenuationInverseSquare</a></li>
+<li><a href="#xbuf.AttenuationLinear">AttenuationLinear</a></li>
+<li><a href="#xbuf.AttenuationSmooth">AttenuationSmooth</a></li>
+<li><a href="#xbuf.Bone">Bone</a></li>
+<li><a href="#xbuf.Color">Color</a></li>
+<li><a href="#xbuf.Data">Data</a></li>
+<li><a href="#xbuf.FloatBuffer">FloatBuffer</a></li>
+<li><a href="#xbuf.Geometry">Geometry</a></li>
+<li><a href="#xbuf.IndexArray">IndexArray</a></li>
+<li><a href="#xbuf.Light">Light</a></li>
+<li><a href="#xbuf.Mat4">Mat4</a></li>
+<li><a href="#xbuf.Material">Material</a></li>
+<li><a href="#xbuf.Mesh">Mesh</a></li>
+<li><a href="#xbuf.Quaternion">Quaternion</a></li>
+<li><a href="#xbuf.Relation">Relation</a></li>
+<li><a href="#xbuf.Skeleton">Skeleton</a></li>
+<li><a href="#xbuf.TObject">TObject</a></li>
+<li><a href="#xbuf.Texture">Texture</a></li>
+<li><a href="#xbuf.Texture2DInline">Texture2DInline</a></li>
+<li><a href="#xbuf.Transform">Transform</a></li>
+<li><a href="#xbuf.UintBuffer">UintBuffer</a></li>
+<li><a href="#xbuf.Vec2">Vec2</a></li>
+<li><a href="#xbuf.Vec3">Vec3</a></li>
+<li><a href="#xbuf.Vec4">Vec4</a></li>
+<li><a href="#xbuf.VertexArray">VertexArray</a></li>
+<li><a href="#xbuf.Light.Kind">Light.Kind</a></li>
+<li><a href="#xbuf.Mesh.Primitive">Mesh.Primitive</a></li>
+<li><a href="#xbuf.Texture2DInline.Format">Texture2DInline.Format</a></li>
+<li><a href="#xbuf.VertexArray.Attrib">VertexArray.Attrib</a></li>
+</ul></li>
+<li><a href="#scalar-value-types">Scalar Value Types</a></li>
+</ul>
+
+<p><a name="animations_kf.proto"/>
+<p align="right"><a href="#top">Top</a></p></p>
+
+<h2 id="animations-kf-proto:00e71df22262087fd8ad820708997657">animations_kf.proto</h2>
+
+<p><a name="xbuf_ext.AnimationKF"/></p>
+
+<h3 id="animationkf:00e71df22262087fd8ad820708997657">AnimationKF</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required</td>
+<td>@check identifier (id) should be unique and invariant over a set of datas (eg: use uuid) and over time.</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional</td>
+<td>display name</td>
+</tr>
+
+<tr>
+<td>duration</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>clips</td>
+<td>Clip</td>
+<td>repeated</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf_ext.BezierParams"/></p>
+
+<h3 id="bezierparams:00e71df22262087fd8ad820708997657">BezierParams</h3>
+
+<p>Bezier Params for a curve between P0(0, yp0)  and P1(1, yp1)
+/ y are in the same range that value of KeyPoints</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>h0_x</td>
+<td>float</td>
+<td>optional</td>
+<td>x of handle of P0 in range [0,1]</td>
+</tr>
+
+<tr>
+<td>h0_y</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>h1_x</td>
+<td>float</td>
+<td>optional</td>
+<td>x of handle of P1 in range [0,1]</td>
+</tr>
+
+<tr>
+<td>h1_y</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf_ext.Clip"/></p>
+
+<h3 id="clip:00e71df22262087fd8ad820708997657">Clip</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>transforms</td>
+<td>TransformKF</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>colors</td>
+<td>ColorKF</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf_ext.ColorKF"/></p>
+
+<h3 id="colorkf:00e71df22262087fd8ad820708997657">ColorKF</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>r</td>
+<td>KeyPoints</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>g</td>
+<td>KeyPoints</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>b</td>
+<td>KeyPoints</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>a</td>
+<td>KeyPoints</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf_ext.KeyPoints"/></p>
+
+<h3 id="keypoints:00e71df22262087fd8ad820708997657">KeyPoints</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>duration_ratio</td>
+<td>float</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>value</td>
+<td>float</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>interpolation</td>
+<td>KeyPoints.InterpolationFct</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>bezier_params</td>
+<td>BezierParams</td>
+<td>repeated</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf_ext.QuaternionKF"/></p>
+
+<h3 id="quaternionkf:00e71df22262087fd8ad820708997657">QuaternionKF</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>x</td>
+<td>KeyPoints</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>y</td>
+<td>KeyPoints</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>z</td>
+<td>KeyPoints</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>w</td>
+<td>KeyPoints</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf_ext.TransformKF"/></p>
+
+<h3 id="transformkf:00e71df22262087fd8ad820708997657">TransformKF</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>translation</td>
+<td>Vec3KF</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>rotation</td>
+<td>QuaternionKF</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>scale</td>
+<td>Vec3KF</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf_ext.Vec3KF"/></p>
+
+<h3 id="vec3kf:00e71df22262087fd8ad820708997657">Vec3KF</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>x</td>
+<td>KeyPoints</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>y</td>
+<td>KeyPoints</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>z</td>
+<td>KeyPoints</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf_ext.KeyPoints.InterpolationFct"/></p>
+
+<h3 id="keypoints-interpolationfct:00e71df22262087fd8ad820708997657">KeyPoints.InterpolationFct</h3>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Number</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>constant</td>
+<td>1</td>
+<td></td>
+</tr>
+
+<tr>
+<td>linear</td>
+<td>2</td>
+<td></td>
+</tr>
+
+<tr>
+<td>bezier</td>
+<td>3</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="custom_params.proto"/>
+<p align="right"><a href="#top">Top</a></p></p>
+
+<h2 id="custom-params-proto:00e71df22262087fd8ad820708997657">custom_params.proto</h2>
+
+<p><a name="xbuf_ext.CustomParam"/></p>
+
+<h3 id="customparam:00e71df22262087fd8ad820708997657">CustomParam</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vbool</td>
+<td>bool</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vstring</td>
+<td>string</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vfloat</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vint</td>
+<td>int32</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vvec2</td>
+<td>Vec2</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vvec3</td>
+<td>Vec3</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vvec4</td>
+<td>Vec4</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vquat</td>
+<td>Quaternion</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vmat4</td>
+<td>Mat4</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vtexture</td>
+<td>Texture</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vcolor</td>
+<td>Color</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf_ext.CustomParamList"/></p>
+
+<h3 id="customparamlist:00e71df22262087fd8ad820708997657">CustomParamList</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>params</td>
+<td>CustomParam</td>
+<td>repeated</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="cmds.proto"/>
+<p align="right"><a href="#top">Top</a></p></p>
+
+<h2 id="cmds-proto:00e71df22262087fd8ad820708997657">cmds.proto</h2>
+
+<p><a name="xbuf.ChangeAssetFolders"/></p>
+
+<h3 id="changeassetfolders:00e71df22262087fd8ad820708997657">ChangeAssetFolders</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>repeated</td>
+<td>a list of local folder path</td>
+</tr>
+
+<tr>
+<td>register</td>
+<td>bool</td>
+<td>optional</td>
+<td>true =&gt; register path as a root folder for assets, false =&gt; unregister/remove path as a root folder</td>
+</tr>
+
+<tr>
+<td>unregisterOther</td>
+<td>bool</td>
+<td>optional</td>
+<td>should try to unregister every other root folders for assets ?</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Cmd"/></p>
+
+<h3 id="cmd:00e71df22262087fd8ad820708997657">Cmd</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>setEye</td>
+<td>SetEye</td>
+<td>optional</td>
+<td>use to define eye (the virtual camera used to render viewport)</td>
+</tr>
+
+<tr>
+<td>setData</td>
+<td>Data</td>
+<td>optional</td>
+<td>use to set (add/update/merge) data into the scene, model, animation, &hellip;</td>
+</tr>
+
+<tr>
+<td>deleteData</td>
+<td>DeleteData</td>
+<td>optional</td>
+<td>use to delete data from a scene, model, animation, &hellip;</td>
+</tr>
+
+<tr>
+<td>changeAssetFolders</td>
+<td>ChangeAssetFolders</td>
+<td>optional</td>
+<td>use to delete data from a scene, model, animation, &hellip;</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.DeleteData"/></p>
+
+<h3 id="deletedata:00e71df22262087fd8ad820708997657">DeleteData</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>refs</td>
+<td>string</td>
+<td>repeated</td>
+<td>the list of id of object to delete, including relation where the object is part of.</td>
+</tr>
+
+<tr>
+<td>relations</td>
+<td>Relation</td>
+<td>repeated</td>
+<td>the list relation to delete, the object part of the relation can continue to exist.</td>
+</tr>
+
+<tr>
+<td>all</td>
+<td>bool</td>
+<td>optional</td>
+<td>set to true to remove all Data</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.SetEye"/></p>
+
+<h3 id="seteye:00e71df22262087fd8ad820708997657">SetEye</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>location</td>
+<td>Vec3</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>rotation</td>
+<td>Quaternion</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>projection</td>
+<td>Mat4</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>near</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>far</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>projMode</td>
+<td>SetEye.ProjMode</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.SetEye.ProjMode"/></p>
+
+<h3 id="seteye-projmode:00e71df22262087fd8ad820708997657">SetEye.ProjMode</h3>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Number</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>perspective</td>
+<td>1</td>
+<td></td>
+</tr>
+
+<tr>
+<td>orthographic</td>
+<td>2</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="datas.proto"/>
+<p align="right"><a href="#top">Top</a></p></p>
+
+<h2 id="datas-proto:00e71df22262087fd8ad820708997657">datas.proto</h2>
+
+<p><a name="xbuf.Attenuation"/></p>
+
+<h3 id="attenuation:00e71df22262087fd8ad820708997657">Attenuation</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>max</td>
+<td>float</td>
+<td>required</td>
+<td>for a distance max is in meter, for an angle attenuation max is in radian.</td>
+</tr>
+
+<tr>
+<td>linear</td>
+<td>AttenuationLinear</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>smooth</td>
+<td>AttenuationSmooth</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>inverse</td>
+<td>AttenuationInverse</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>inverse_square</td>
+<td>AttenuationInverseSquare</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.AttenuationInverse"/></p>
+
+<h3 id="attenuationinverse:00e71df22262087fd8ad820708997657">AttenuationInverse</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>scale</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>offset</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>constant</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>linear</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.AttenuationInverseSquare"/></p>
+
+<h3 id="attenuationinversesquare:00e71df22262087fd8ad820708997657">AttenuationInverseSquare</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>scale</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>offset</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>constant</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>linear</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>quadratic</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.AttenuationLinear"/></p>
+
+<h3 id="attenuationlinear:00e71df22262087fd8ad820708997657">AttenuationLinear</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>begin</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>end</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.AttenuationSmooth"/></p>
+
+<h3 id="attenuationsmooth:00e71df22262087fd8ad820708997657">AttenuationSmooth</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>begin</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>end</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Bone"/></p>
+
+<h3 id="bone:00e71df22262087fd8ad820708997657">Bone</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required</td>
+<td>@check identifier (id) should be unique and invariant over a set of datas (eg: use uuid) and over time.</td>
+</tr>
+
+<tr>
+<td>transform</td>
+<td>Transform</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional</td>
+<td>display name</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Color"/></p>
+
+<h3 id="color:00e71df22262087fd8ad820708997657">Color</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>r</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>g</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>b</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>a</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Data"/></p>
+
+<h3 id="data:00e71df22262087fd8ad820708997657">Data</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>version</td>
+<td>uint32</td>
+<td>optional</td>
+<td>version of the protocol / data format. readonly !! (== the major of the xbuf project version)</td>
+</tr>
+
+<tr>
+<td>relations</td>
+<td>Relation</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>tobjects</td>
+<td>TObject</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>geometries</td>
+<td>Geometry</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>materials</td>
+<td>Material</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>lights</td>
+<td>Light</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>skeletons</td>
+<td>Skeleton</td>
+<td>repeated</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.FloatBuffer"/></p>
+
+<h3 id="floatbuffer:00e71df22262087fd8ad820708997657">FloatBuffer</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>values</td>
+<td>float</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>step</td>
+<td>uint32</td>
+<td>required</td>
+<td>number of float per group/entry (eg 3 for vec3, 2 for texcoord,&hellip;). the length of values should be a multiple of step</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Geometry"/></p>
+
+<h3 id="geometry:00e71df22262087fd8ad820708997657">Geometry</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required</td>
+<td>@check identifier (id) should be unique and invariant over a set of datas (eg: use uuid) and over time.</td>
+</tr>
+
+<tr>
+<td>meshes</td>
+<td>Mesh</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional</td>
+<td>display name</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.IndexArray"/></p>
+
+<h3 id="indexarray:00e71df22262087fd8ad820708997657">IndexArray</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ints</td>
+<td>UintBuffer</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Light"/></p>
+
+<h3 id="light:00e71df22262087fd8ad820708997657">Light</h3>
+
+<p>the direction of the light need by directional and spot is Z (forward like regular Node).
+/ To use an other direction add relation to a Node and change the rotation of the Node (idem for translation).</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required</td>
+<td>@check identifier (id) should be unique and invariant over a set of datas (eg: use uuid) and over time.</td>
+</tr>
+
+<tr>
+<td>kind</td>
+<td>Light.Kind</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>color</td>
+<td>Color</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>intensity</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>cast_shadow</td>
+<td>bool</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>radial_distance</td>
+<td>Attenuation</td>
+<td>optional</td>
+<td>attenuation from the radial distance of light source (for spot and point)</td>
+</tr>
+
+<tr>
+<td>spot_angle</td>
+<td>Attenuation</td>
+<td>optional</td>
+<td>attenuation of the angle forme between the forward axis (z) and the direction of the point./ eg: for a linear attenuation linear.begin is the end of inner cone, linear.end is the end of outer cone : linear define the penumbra</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional</td>
+<td>display name</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Mat4"/></p>
+
+<h3 id="mat4:00e71df22262087fd8ad820708997657">Mat4</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>c00</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c10</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c20</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c30</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c01</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c11</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c21</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c31</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c02</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c12</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c22</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c32</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c03</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c13</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c23</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>c33</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Material"/></p>
+
+<h3 id="material:00e71df22262087fd8ad820708997657">Material</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required</td>
+<td>@check identifier (id) should be unique and invariant over a set of datas (eg: use uuid) and over time.</td>
+</tr>
+
+<tr>
+<td>family</td>
+<td>string</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional</td>
+<td>display name</td>
+</tr>
+
+<tr>
+<td>shadeless</td>
+<td>bool</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>color</td>
+<td>Color</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>color_map</td>
+<td>Texture</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>opacity</td>
+<td>float</td>
+<td>optional</td>
+<td>@check range(0.0, 1.0)</td>
+</tr>
+
+<tr>
+<td>opacity_map</td>
+<td>Texture</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>normal</td>
+<td>Vec3</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>normal_map</td>
+<td>Texture</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>roughness</td>
+<td>float</td>
+<td>optional</td>
+<td>@check range(0.0, 1.0)</td>
+</tr>
+
+<tr>
+<td>roughness_map</td>
+<td>Texture</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>metalness</td>
+<td>float</td>
+<td>optional</td>
+<td>@check range(0.0, 1.0)</td>
+</tr>
+
+<tr>
+<td>metalness_map</td>
+<td>Texture</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>specular</td>
+<td>Color</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>specular_map</td>
+<td>Texture</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>specular_power</td>
+<td>float</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>specular_power_map</td>
+<td>Texture</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>emission</td>
+<td>Color</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>emission_map</td>
+<td>Texture</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Mesh"/></p>
+
+<h3 id="mesh:00e71df22262087fd8ad820708997657">Mesh</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required</td>
+<td>@check identifier (id) should be unique and invariant over a set of datas (eg: use uuid) and over time.</td>
+</tr>
+
+<tr>
+<td>primitive</td>
+<td>Mesh.Primitive</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>lod</td>
+<td>uint32</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>vertexArrays</td>
+<td>VertexArray</td>
+<td>repeated</td>
+<td>@check every vertexArray should have the same number of elements (size / step)</td>
+</tr>
+
+<tr>
+<td>indexArrays</td>
+<td>IndexArray</td>
+<td>repeated</td>
+<td>@check max value of every indexArray should be &lt; number of elements of vertexArrays</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional</td>
+<td>display name</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Quaternion"/></p>
+
+<h3 id="quaternion:00e71df22262087fd8ad820708997657">Quaternion</h3>
+
+<p>Quaternion should be normalized</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>x</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>y</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>z</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>w</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Relation"/></p>
+
+<h3 id="relation:00e71df22262087fd8ad820708997657">Relation</h3>
+
+<p>Define a Relation (edge, link) between two objects with an id
+/ rules:
+/ * typename of obj with id == ref1 &lt; typename of obj with id == ref2
+/ * if typename of both obj is the same the relation if ref1 is the parent, ref2 is the child</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ref1</td>
+<td>string</td>
+<td>required</td>
+<td>reference the id of object 1/@check ref1 != ref2</td>
+</tr>
+
+<tr>
+<td>ref2</td>
+<td>string</td>
+<td>required</td>
+<td>reference the id of object 1</td>
+</tr>
+
+<tr>
+<td>label</td>
+<td>string</td>
+<td>optional</td>
+<td>mainly for description but often useless</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Skeleton"/></p>
+
+<h3 id="skeleton:00e71df22262087fd8ad820708997657">Skeleton</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required</td>
+<td>@check identifier (id) should be unique and invariant over a set of datas (eg: use uuid) and over time.</td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional</td>
+<td>display name</td>
+</tr>
+
+<tr>
+<td>bones</td>
+<td>Bone</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>bones_graph</td>
+<td>Relation</td>
+<td>repeated</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.TObject"/></p>
+
+<h3 id="tobject:00e71df22262087fd8ad820708997657">TObject</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required</td>
+<td>@check identifier (id) should be unique and invariant over a set of datas (eg: use uuid) and over time.</td>
+</tr>
+
+<tr>
+<td>transform</td>
+<td>Transform</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional</td>
+<td>display name</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Texture"/></p>
+
+<h3 id="texture:00e71df22262087fd8ad820708997657">Texture</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>name</td>
+<td>string</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>rpath</td>
+<td>string</td>
+<td>optional</td>
+<td>path of the texture relative to asset root folder (use &lsquo;/&rsquo; as folder separator)</td>
+</tr>
+
+<tr>
+<td>tex2d</td>
+<td>Texture2DInline</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Texture2DInline"/></p>
+
+<h3 id="texture2dinline:00e71df22262087fd8ad820708997657">Texture2DInline</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>format</td>
+<td>Texture2DInline.Format</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>width</td>
+<td>uint32</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>height</td>
+<td>uint32</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>bytes</td>
+<td>required</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Transform"/></p>
+
+<h3 id="transform:00e71df22262087fd8ad820708997657">Transform</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>translation</td>
+<td>Vec3</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>rotation</td>
+<td>Quaternion</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>scale</td>
+<td>Vec3</td>
+<td>required</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.UintBuffer"/></p>
+
+<h3 id="uintbuffer:00e71df22262087fd8ad820708997657">UintBuffer</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>values</td>
+<td>uint32</td>
+<td>repeated</td>
+<td></td>
+</tr>
+
+<tr>
+<td>step</td>
+<td>uint32</td>
+<td>required</td>
+<td>number of float per group/entry (eg 3 for vec3, 2 for texcoord,&hellip;). the length of values should be a multiple of step</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Vec2"/></p>
+
+<h3 id="vec2:00e71df22262087fd8ad820708997657">Vec2</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>x</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>y</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Vec3"/></p>
+
+<h3 id="vec3:00e71df22262087fd8ad820708997657">Vec3</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>x</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>y</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>z</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Vec4"/></p>
+
+<h3 id="vec4:00e71df22262087fd8ad820708997657">Vec4</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>x</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>y</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>z</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>w</td>
+<td>float</td>
+<td>required</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.VertexArray"/></p>
+
+<h3 id="vertexarray:00e71df22262087fd8ad820708997657">VertexArray</h3>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>attrib</td>
+<td>VertexArray.Attrib</td>
+<td>required</td>
+<td></td>
+</tr>
+
+<tr>
+<td>morph</td>
+<td>uint32</td>
+<td>optional</td>
+<td></td>
+</tr>
+
+<tr>
+<td>floats</td>
+<td>FloatBuffer</td>
+<td>optional</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Light.Kind"/></p>
+
+<h3 id="light-kind:00e71df22262087fd8ad820708997657">Light.Kind</h3>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Number</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>ambient</td>
+<td>1</td>
+<td></td>
+</tr>
+
+<tr>
+<td>directional</td>
+<td>2</td>
+<td></td>
+</tr>
+
+<tr>
+<td>point</td>
+<td>3</td>
+<td></td>
+</tr>
+
+<tr>
+<td>spot</td>
+<td>4</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Mesh.Primitive"/></p>
+
+<h3 id="mesh-primitive:00e71df22262087fd8ad820708997657">Mesh.Primitive</h3>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Number</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>points</td>
+<td>1</td>
+<td>&quot;points&quot; The mesh is composed of a set of independent points. The number of points is n, and point i is given by vertex i.</td>
+</tr>
+
+<tr>
+<td>lines</td>
+<td>2</td>
+<td>&quot;lines&quot; The mesh is composed of a set of independent lines. The number of lines is n / 2 , and line i is composed of vertices 2i and 2i+1 .</td>
+</tr>
+
+<tr>
+<td>line_strip</td>
+<td>3</td>
+<td>&quot;line_strip&quot; The mesh is composed of one or more line strips. The number of lines is  n - 1 , and line i is composed of vertices i and i + 1 .</td>
+</tr>
+
+<tr>
+<td>triangles</td>
+<td>4</td>
+<td>&quot;triangles&quot; The mesh is composed of a set of independent triangles. The number of triangles is n/3 , and triangle i is composed of vertices 3i , 3i + 1 , and 3i + 2.</td>
+</tr>
+
+<tr>
+<td>triangle_strip</td>
+<td>5</td>
+<td>&quot;triangle_strip&quot; The mesh is composed of one or more triangle strips. The number of triangles is n - 2 , and triangle i is composed of vertices i, i + 1 , and i + 2 when i is even or vertices i, i + 2 , and i + 1 when i is odd, in the orders listed.</td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.Texture2DInline.Format"/></p>
+
+<h3 id="texture2dinline-format:00e71df22262087fd8ad820708997657">Texture2DInline.Format</h3>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Number</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>rgb8</td>
+<td>1</td>
+<td></td>
+</tr>
+
+<tr>
+<td>rgba8</td>
+<td>2</td>
+<td></td>
+</tr>
+
+<tr>
+<td>bgra8</td>
+<td>3</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="xbuf.VertexArray.Attrib"/></p>
+
+<h3 id="vertexarray-attrib:00e71df22262087fd8ad820708997657">VertexArray.Attrib</h3>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Number</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>position</td>
+<td>1</td>
+<td></td>
+</tr>
+
+<tr>
+<td>normal</td>
+<td>2</td>
+<td></td>
+</tr>
+
+<tr>
+<td>tangent</td>
+<td>3</td>
+<td></td>
+</tr>
+
+<tr>
+<td>bitangent</td>
+<td>4</td>
+<td></td>
+</tr>
+
+<tr>
+<td>color</td>
+<td>5</td>
+<td></td>
+</tr>
+
+<tr>
+<td>texcoord</td>
+<td>6</td>
+<td></td>
+</tr>
+
+<tr>
+<td>texcoord2</td>
+<td>7</td>
+<td></td>
+</tr>
+
+<tr>
+<td>texcoord3</td>
+<td>8</td>
+<td></td>
+</tr>
+
+<tr>
+<td>texcoord4</td>
+<td>9</td>
+<td></td>
+</tr>
+
+<tr>
+<td>texcoord5</td>
+<td>10</td>
+<td></td>
+</tr>
+
+<tr>
+<td>texcoord6</td>
+<td>11</td>
+<td></td>
+</tr>
+
+<tr>
+<td>texcoord7</td>
+<td>12</td>
+<td></td>
+</tr>
+
+<tr>
+<td>texcoord8</td>
+<td>13</td>
+<td></td>
+</tr>
+
+<tr>
+<td>texcoord9</td>
+<td>14</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p><a name="scalar-value-types"/></p>
+
+<h2 id="scalar-value-types:00e71df22262087fd8ad820708997657">Scalar Value Types</h2>
+
+<table>
+<thead>
+<tr>
+<th>.proto Type</th>
+<th>Notes</th>
+<th>C++ Type</th>
+<th>Java Type</th>
+<th>Python Type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>double</td>
+<td></td>
+<td>double</td>
+<td>double</td>
+<td>float</td>
+</tr>
+
+<tr>
+<td>float</td>
+<td></td>
+<td>float</td>
+<td>float</td>
+<td>float</td>
+</tr>
+
+<tr>
+<td>int32</td>
+<td>Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint32 instead.</td>
+<td>int32</td>
+<td>int</td>
+<td>int</td>
+</tr>
+
+<tr>
+<td>int64</td>
+<td>Uses variable-length encoding. Inefficient for encoding negative numbers – if your field is likely to have negative values, use sint64 instead.</td>
+<td>int64</td>
+<td>long</td>
+<td>int/long</td>
+</tr>
+
+<tr>
+<td>uint32</td>
+<td>Uses variable-length encoding.</td>
+<td>uint32</td>
+<td>int</td>
+<td>int/long</td>
+</tr>
+
+<tr>
+<td>uint64</td>
+<td>Uses variable-length encoding.</td>
+<td>uint64</td>
+<td>long</td>
+<td>int/long</td>
+</tr>
+
+<tr>
+<td>sint32</td>
+<td>Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int32s.</td>
+<td>int32</td>
+<td>int</td>
+<td>int</td>
+</tr>
+
+<tr>
+<td>sint64</td>
+<td>Uses variable-length encoding. Signed int value. These more efficiently encode negative numbers than regular int64s.</td>
+<td>int64</td>
+<td>long</td>
+<td>int/long</td>
+</tr>
+
+<tr>
+<td>fixed32</td>
+<td>Always four bytes. More efficient than uint32 if values are often greater than 2^28.</td>
+<td>uint32</td>
+<td>int</td>
+<td>int</td>
+</tr>
+
+<tr>
+<td>fixed64</td>
+<td>Always eight bytes. More efficient than uint64 if values are often greater than 2^56.</td>
+<td>uint64</td>
+<td>long</td>
+<td>int/long</td>
+</tr>
+
+<tr>
+<td>sfixed32</td>
+<td>Always four bytes.</td>
+<td>int32</td>
+<td>int</td>
+<td>int</td>
+</tr>
+
+<tr>
+<td>sfixed64</td>
+<td>Always eight bytes.</td>
+<td>int64</td>
+<td>long</td>
+<td>int/long</td>
+</tr>
+
+<tr>
+<td>bool</td>
+<td></td>
+<td>bool</td>
+<td>boolean</td>
+<td>boolean</td>
+</tr>
+
+<tr>
+<td>string</td>
+<td>A string must always contain UTF-8 encoded or 7-bit ASCII text.</td>
+<td>string</td>
+<td>String</td>
+<td>str/unicode</td>
+</tr>
+
+<tr>
+<td>bytes</td>
+<td>May contain any arbitrary sequence of bytes.</td>
+<td>string</td>
+<td>ByteString</td>
+<td>str</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+</div>
+</div>
+
+<aside class="small-3 small-pull-9 columns sidebar">
+  <h1>xbuf</h1>
+  <p> An exchange format for 3D scenes, models, animations, … </p>
+  <div class="icon-bar vertical five-up">
+    
+</div>
+<p>Public domain (CC0-1.0)</p>
+</aside>
+
+</div>
+<script src="http://www.xbuf.org//js/vendor/jquery.js"></script>
+<script src="http://www.xbuf.org//js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+  </body>
+</html>
+

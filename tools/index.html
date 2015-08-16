@@ -1,0 +1,137 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+  <title> Tools &middot; xbuf </title>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+  <link rel="stylesheet" href="http://www.xbuf.org//css/foundation.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="http://www.xbuf.org//css/app.css" />
+  
+  <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.xbuf.org/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://www.xbuf.org/favicon.ico">
+
+  
+  <script src="http://www.xbuf.org//js/vendor/modernizr.js"></script>
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="xbuf" />
+</head>
+
+<body>
+<div class="">
+
+<div class="small-9 small-push-3 columns">
+
+<header class="row">
+  <div class="small-12 columns">
+    <h1 class="text-center"><a href="http://www.xbuf.org/tools/">Tools</a></h1>
+    <div id="toc" class="small-6 medium-4 columns">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#existing-tools-libraries:392b1cfe5865fa09a3eb545085be9682">Existing Tools, Libraries, &hellip;</a>
+<ul>
+<li><a href="#game-engine-integration:392b1cfe5865fa09a3eb545085be9682">Game Engine integration</a></li>
+<li><a href="#3d-tools-integration:392b1cfe5865fa09a3eb545085be9682">3D Tools integration</a></li>
+<li><a href="#protobuf-tools:392b1cfe5865fa09a3eb545085be9682">Protobuf tools</a></li>
+</ul></li>
+<li><a href="#ideas-for-tools:392b1cfe5865fa09a3eb545085be9682">Ideas for Tools</a>
+<ul>
+<li><a href="#checker:392b1cfe5865fa09a3eb545085be9682">Checker</a></li>
+<li><a href="#merge:392b1cfe5865fa09a3eb545085be9682">Merge</a></li>
+</ul></li>
+<li><a href="#extractor:392b1cfe5865fa09a3eb545085be9682">Extractor</a></li>
+<li><a href="#remapper:392b1cfe5865fa09a3eb545085be9682">Remapper</a></li>
+</ul>
+</nav>
+    </div>
+  </div>
+</header>
+
+<div class="row">
+  <div class="small-12 columns">
+    <span class="post-date">Mon, Feb 16, 2015</span>
+    
+
+<h1 id="existing-tools-libraries:392b1cfe5865fa09a3eb545085be9682">Existing Tools, Libraries, &hellip;</h1>
+
+<h2 id="game-engine-integration:392b1cfe5865fa09a3eb545085be9682">Game Engine integration</h2>
+
+<ul>
+<li>[jme3_ext_remote_editor]() for <a href="http://jmonkeyengine.org">jMonkeyEngine</a>, allow to receive commands and datas over socket to modify the scene. It also include a Loader for &lsquo;.xbuf&rsquo;</li>
+</ul>
+
+<h2 id="3d-tools-integration:392b1cfe5865fa09a3eb545085be9682">3D Tools integration</h2>
+
+<h2 id="protobuf-tools:392b1cfe5865fa09a3eb545085be9682">Protobuf tools</h2>
+
+<ul>
+<li>a list of languages and utilities for protobuf is available at <a href="https://github.com/google/protobuf/wiki/Third-Party-Add-ons">Third-Party-Add-ons</a></li>
+<li>google, bing, &hellip; ;-)</li>
+</ul>
+
+<h1 id="ideas-for-tools:392b1cfe5865fa09a3eb545085be9682">Ideas for Tools</h1>
+
+<h2 id="checker:392b1cfe5865fa09a3eb545085be9682">Checker</h2>
+
+<ul>
+<li>in a collection of datas (.xbuf) : verify that every ref points to existing id.</li>
+<li>in a collection of datas (.xbuf) : verify (+ correct) order of the ref in Relation.</li>
+<li>in a collection of datas (.xbuf) : verify that in parent-child relation child only have one parent (eg: TObject).</li>
+<li>in a datas (.xbuf) : verify that size of XxxBuffer is a multiple of its step.</li>
+<li>in a datas (.xbuf) : verify that every rpath points to existing file in assets&rsquo; folder.</li>
+</ul>
+
+<h2 id="merge:392b1cfe5865fa09a3eb545085be9682">Merge</h2>
+
+<ul>
+<li>merge a collection of datas into a single datas + external assets</li>
+</ul>
+
+<h1 id="extractor:392b1cfe5865fa09a3eb545085be9682">Extractor</h1>
+
+<ul>
+<li>from a collection of datas (.xbuf) : extract Node and related data + assets into its own datas</li>
+<li>from a collection of datas (.xbuf) : extract Material and related data + assets into its own datas</li>
+<li>from a collection of datas (.xbuf) : list all assets (rpath)</li>
+</ul>
+
+<h1 id="remapper:392b1cfe5865fa09a3eb545085be9682">Remapper</h1>
+
+<ul>
+<li>in a collection of datas (.xbuf) : rename id (and ref) (via regexp or conversion table or a generator)</li>
+<li>in a collection of datas (.xbuf) : change rpath (and ref) (via regexp or conversion table)</li>
+</ul>
+
+  </div>
+</div>
+</div>
+
+<aside class="small-3 small-pull-9 columns sidebar">
+  <h1>xbuf</h1>
+  <p> An exchange format for 3D scenes, models, animations, … </p>
+  <div class="icon-bar vertical five-up">
+    
+</div>
+<p>Public domain (CC0-1.0)</p>
+</aside>
+
+</div>
+<script src="http://www.xbuf.org//js/vendor/jquery.js"></script>
+<script src="http://www.xbuf.org//js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+  </body>
+</html>
+
