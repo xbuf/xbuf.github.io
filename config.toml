@@ -1,7 +1,7 @@
 baseurl = "http://www.xbuf.org/"
 languageCode = "en-us"
 title = "xbuf"
-theme = "hyde"
+theme = "site0"
 canonifyurls = true
 
 [params]

@@ -1,0 +1,17 @@
+{{ partial "default_before.html" . }}
+<header class="row">
+  <div class="small-12 columns">
+    <h1 class="text-center"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    <div id="toc" class="small-6 medium-4 columns">
+      {{ .TableOfContents }}
+    </div>
+  </div>
+</header>
+
+<div class="row">
+  <div class="small-12 columns">
+    <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+    {{ .Content }}
+  </div>
+</div>
+{{ partial "default_after.html" . }}

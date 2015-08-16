@@ -1,0 +1,19 @@
+{{ partial "default_before.html" . }}
+<header class="row">
+  <div class="small-12 columns">
+    <h1 class="text-center"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+  </div>
+</header>
+
+<div class="row">
+  <div class="small-12 columns">
+    <ul class="posts">
+        {{ range .Data.Pages }}
+        <li>
+          <span><a href="{{ .Permalink }}">{{ .Title }}</a> <time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></span>
+        </li>
+        {{ end }}
+    </ul>
+  </div>
+</div>
+{{ partial "default_after.html" . }}
