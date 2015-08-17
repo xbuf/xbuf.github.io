@@ -1,0 +1,138 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+  <title> Get started &middot; xbuf </title>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+  <link rel="stylesheet" href="http://www.xbuf.org//css/foundation.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="http://www.xbuf.org//css/app.css" />
+  
+  <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.xbuf.org/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://www.xbuf.org/favicon.ico">
+
+  
+  <script src="http://www.xbuf.org//js/vendor/modernizr.js"></script>
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="xbuf" />
+</head>
+
+<body>
+<div class="">
+
+<div class="small-9 small-push-3 columns">
+
+<header class="row">
+  <div class="small-12 columns">
+    <h1 class="text-center"><a href="http://www.xbuf.org/get_started/">Get started</a></h1>
+    <div id="toc" class="small-6 medium-4 columns">
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#level-1:acce8be8b0123631e58130cc34d7f08e">Level 1</a>
+<ul>
+<li><a href="#jme3-xbuf-viewer:acce8be8b0123631e58130cc34d7f08e">jme3_xbuf_viewer</a></li>
+<li><a href="#on-blender-2-73-http-www-blender-org:acce8be8b0123631e58130cc34d7f08e">On <a href="http://www.blender.org/">blender 2.73+</a></a></li>
+</ul></li>
+<li><a href="#level-2:acce8be8b0123631e58130cc34d7f08e">Level 2</a></li>
+</ul>
+</nav>
+    </div>
+  </div>
+</header>
+
+<div class="row">
+  <div class="small-12 columns">
+    <span class="post-date">Mon, Jul 20, 2015</span>
+    
+
+<h1 id="level-1:acce8be8b0123631e58130cc34d7f08e">Level 1</h1>
+
+<p>The quickest way to give a try to jme3_xbuf : blender_io_xbuf + jme3_xbuf_viewer.</p>
+
+<h2 id="jme3-xbuf-viewer:acce8be8b0123631e58130cc34d7f08e">jme3_xbuf_viewer</h2>
+
+<p>Install a pre-configured application ready to connect to blender.</p>
+
+<ol>
+<li>install java 8</li>
+<li>download <a href="https://github.com/xbuf/jme3_xbuf/releases/download/0.4.0/jme3_xbuf_viewer-201507192026.tar.gz">jme3_xbuf_viewer-201507192026.tar.gz</a> + unarchive + run ./launch (or launch.exe)</li>
+</ol>
+
+<h2 id="on-blender-2-73-http-www-blender-org:acce8be8b0123631e58130cc34d7f08e">On <a href="http://www.blender.org/">blender 2.73+</a></h2>
+
+<ol>
+<li>click the <strong><a href="https://github.com/xbuf/blender_io_xbuf/archive/master.zip">Download ZIP</a></strong> button on <a href="https://github.com/xbuf/blender_io_xbuf">blender_io_xbuf</a></li>
+<li>install add-on into blender
+
+<ul>
+<li><code>File &gt; User Preferences ... &gt; Addons &gt; Install from file ...</code> select the downloaded zip file</li>
+<li>enable the plugin <strong>Import-Export: Xbuf Exporter &amp; Render Engine</strong> (check the checkbox)</li>
+</ul></li>
+<li>Open or create a model</li>
+<li>select &ldquo;xbuf&rdquo; in the render engine combobox (top)</li>
+<li>check the render properties (eg: the directory where to export images,&hellip;)</li>
+<li>in the 3D view select &ldquo;viewport shading : rendered&rdquo; could take/freeze a moment to trandfert the initial data.</li>
+<li>You should see your model rendered via jme inside blender viewport, play with the camera, lights, &hellip; (animation should store in a strip on NLA Editor, click on the strip)</li>
+</ol>
+
+<h1 id="level-2:acce8be8b0123631e58130cc34d7f08e">Level 2</h1>
+
+<p>Export your data from blender via <code>File &gt; Export &gt; xbuf</code>, external assets like images are stored into the directory define in the Render property panel (when xbuf renderer is selected).</p>
+
+<p>Load your xbuf data into your jme app :</p>
+
+<pre><code>import jme3_ext_xbuf.XbufLoader;
+...
+assetManager.registerLoader(XbufLoader.class, &quot;xbuf&quot;);
+Spatial s = assetManager.loadModel(&quot;Models/xxxxx.xbuf&quot;);
+</code></pre>
+
+<p>dependencies setup :</p>
+
+<pre><code>repositories {
+	mavenLocal()
+	jcenter()
+	maven { url &quot;http://updates.jmonkeyengine.org/maven/&quot;}
+	maven { url &quot;https://jitpack.io&quot; }
+}
+
+dependencies {
+  compile 'org.xbuf.jme3_xbuf:jme3_xbuf_loader:213c6a499d'
+...
+</code></pre>
+
+<p>see <a href="https://github.com/xbuf/jme3_xbuf/tree/master/samples/xbuf_jaime">samples/xbuf_jaime</a> for a runnable sample.</p>
+
+  </div>
+</div>
+</div>
+
+<aside class="small-3 small-pull-9 columns sidebar">
+  <h1>xbuf</h1>
+  <p> An exchange format for 3D scenes, models, animations, … </p>
+  <div class="icon-bar vertical five-up">
+    
+</div>
+<p>Public domain (CC0-1.0)</p>
+</aside>
+
+</div>
+<script src="http://www.xbuf.org//js/vendor/jquery.js"></script>
+<script src="http://www.xbuf.org//js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+  </body>
+</html>
+
