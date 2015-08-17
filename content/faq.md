@@ -69,7 +69,7 @@ But there some ideas :
 
 see discussion [glTF : unify scenes axis-up](https://github.com/KhronosGroup/glTF/issues/22)
 
-# Why no configurable up ?
+##  Why no configurable up ?
 
 * see *Why no configurable metrics (like in OpenGEX) ?* (above)
 * To avoid branch in loader code like in this [response on unity forum](http://answers.unity3d.com/questions/46589/zup-yup-xup-handedness-space-conversion.html)
