@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
 <head>
   <title> FAQ &middot; xbuf </title>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
+  
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta charset="utf-8" />
 
@@ -11,10 +11,10 @@
 
   
   <link rel="stylesheet" href="http://www.xbuf.org//css/foundation.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
   <link rel="stylesheet" href="http://www.xbuf.org//css/app.css" />
   
-  <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+  <link href='//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
 
   
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.xbuf.org/apple-touch-icon-144-precomposed.png">
@@ -26,9 +26,7 @@
   
   <link href="" rel="alternate" type="application/rss+xml" title="xbuf" />
 
-  <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css">
-  <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="http://www.xbuf.org//css/prism.css" />
 
 </head>
 
@@ -86,9 +84,9 @@
 <li>uniform axis unit</li>
 <li>front face: CCW (counter-clock-wise), back face: CW</li>
 </ul></li>
-<li>distance unit : meter (float)</li>
-<li>time unit : millisecond (int32)</li>
-<li>angle unit : radian (float)</li>
+<li>Distance unit : meter (float)</li>
+<li>Time unit : millisecond (int32)</li>
+<li>Angle unit : radian (float)</li>
 </ul>
 
 <p>I try to collect same data for game engine, tools, to help create importer/exporter. Help me to complete the <a href="https://docs.google.com/spreadsheets/d/19FscoJzidZKF6Iqs1bqELv57Ds-t_dAbMD_XflrIUuk/edit?usp=sharing">table</a></p>
@@ -105,9 +103,9 @@
 <p>But there some ideas :</p>
 
 <ul>
-<li>integrate some community&rsquo; suggestions</li>
-<li>ingrate compression  like <a href="https://github.com/KhronosGroup/glTF/wiki/Open-3D-Graphics-Compression">glTF: Open 3D Graphics Compression</a></li>
-<li>define an archive format to store complementary data : textures, shaders, &hellip;</li>
+<li>Integrate some community&rsquo; suggestions</li>
+<li>Ingrate compression  like <a href="https://github.com/KhronosGroup/glTF/wiki/Open-3D-Graphics-Compression">glTF: Open 3D Graphics Compression</a></li>
+<li>Define an archive format to store complementary data : textures, shaders, &hellip;</li>
 </ul>
 
 <h1 id="how:4a1318da06786ac52626178ca960109e">How &hellip;</h1>
@@ -115,8 +113,8 @@
 <h2 id="how-can-i-protect-my-content:4a1318da06786ac52626178ca960109e">How can I protect my content ?</h2>
 
 <ol>
-<li>change the file extension</li>
-<li>modify the file content, example of modifications (can be combined) :
+<li>Change the file extension</li>
+<li>Modify the file content, example of modifications (can be combined) :
 
 <ul>
 <li>wrap into your own proto Message</li>
@@ -132,42 +130,42 @@
 <h2 id="why-not-opengex-http-opengex-org:4a1318da06786ac52626178ca960109e">Why not <a href="http://opengex.org/">OpenGEX</a> ?</h2>
 
 <ul>
-<li>except if you use <a href="http://opengex.org/OpenGex-Import.zip">OpenGEX Import Template</a> (C++ only), it requires to write parser and low level writer, and writing good parser is hard.</li>
-<li>text based, not optimal for network and realtime update</li>
-<li>importer should support several metrics, orientation (Z up, Y up,&hellip;)</li>
+<li>Rxcept if you use <a href="http://opengex.org/OpenGex-Import.zip">OpenGEX Import Template</a> (C++ only), it requires to write parser and low level writer, and writing good parser is hard.</li>
+<li>Text based, not optimal for network and realtime update</li>
+<li>Importer should support several metrics, several orientations (Z up, Y up,&hellip;)</li>
 </ul>
 
 <h2 id="why-not-gltf-https-github-com-khronosgroup-gltf:4a1318da06786ac52626178ca960109e">Why not <a href="https://github.com/KhronosGroup/glTF">glTF</a> ?</h2>
 
 <ul>
-<li>moving and heavy spec ;-)</li>
-<li>json based, require to write &ldquo;semantic&rdquo; parser, converter.</li>
+<li>Moving and heavy spec ;-)</li>
+<li>Json based format requires to write &ldquo;semantic&rdquo; parser, converter.</li>
 </ul>
 
 <h2 id="why-no-configurable-metrics-like-in-opengex:4a1318da06786ac52626178ca960109e">Why no configurable metrics (like in OpenGEX) ?</h2>
 
 <ul>
-<li>to simplify the loader (less combinaison, less confusion) : <em>&ldquo;convention over configuration&rdquo;</em></li>
-<li>to ease share and merge of data</li>
-<li>it&rsquo;s the responsability of the exporter to write sharable data (from internal format to xbuf)</li>
+<li>To simplify the loader (less composition to implement loader, less confusion) : <em>&ldquo;convention over configuration&rdquo;</em></li>
+<li>To ease share and merge of data (eg: merge multiples xbuf file)</li>
+<li>It&rsquo;s the responsability of the exporter to write shareable data (from internal format to xbuf)</li>
 </ul>
-
-<p>see discussion <a href="https://github.com/KhronosGroup/glTF/issues/22">glTF : unify scenes axis-up</a></p>
 
 <h2 id="why-no-configurable-up:4a1318da06786ac52626178ca960109e">Why no configurable up ?</h2>
 
 <ul>
-<li>see <em>Why no configurable metrics (like in OpenGEX) ?</em> (above)</li>
-<li>To avoid branch in loader code like in this <a href="http://answers.unity3d.com/questions/46589/zup-yup-xup-handedness-space-conversion.html">response on unity forum</a></li>
+<li>See <em>Why no configurable metrics (like in OpenGEX) ?</em> (above).</li>
+<li>To avoid branch in loader code like in this <a href="http://answers.unity3d.com/questions/46589/zup-yup-xup-handedness-space-conversion.html">response on unity forum</a>.</li>
 </ul>
+
+<p>see discussion <a href="https://github.com/KhronosGroup/glTF/issues/22">glTF : unify scenes axis-up</a>.</p>
 
 <h2 id="why-no-transform-matrix-variant-of-rotation-scale:4a1318da06786ac52626178ca960109e">Why no transform matrix, variant of Rotation, Scale ?</h2>
 
 <ul>
-<li>see <em>Why no configurable metrics (like in OpenGEX) ?</em> (above)</li>
+<li>See <em>Why no configurable metrics (like in OpenGEX) ?</em> (above).</li>
 <li>I don&rsquo;t want too freedom (simple loader, more work on exporter), so I have to choose between matrix or translation / rotation / scale</li>
-<li>Extracting translation / rotation / scale from a 4×4 matrix is harder than creating a 4×4 matrix from translation / rotation / scale is much easier.</li>
-<li>Quaternion is often more animation friendly</li>
+<li>Extracting translation / rotation / scale from a 4×4 matrix is harder than creating a 4×4 matrix from translation / rotation / scale.</li>
+<li>Quaternion is often more animation friendly.</li>
 </ul>
 
   </div>
@@ -189,6 +187,7 @@
 <script>
   $(document).foundation();
 </script>
+<script src="http://www.xbuf.org//js/prism.js"></script>
 
   </body>
 </html>

@@ -6,16 +6,18 @@
     <description>Recent content on xbuf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jul 2015 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2015 00:00:00 +0100</lastBuildDate>
     <atom:link href="http://www.xbuf.org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Get started</title>
       <link>http://www.xbuf.org/get_started/</link>
-      <pubDate>Mon, 20 Jul 2015 00:00:00 +0100</pubDate>
+      <pubDate>Fri, 21 Aug 2015 00:00:00 +0100</pubDate>
       
       <guid>http://www.xbuf.org/get_started/</guid>
       <description>
+
+&lt;p&gt;In the tutoriel bellow I use jME3 as render engine, but xbuf is not limited to jME3. It&amp;rsquo;s just the first target engine I work on.&lt;/p&gt;
 
 &lt;h1 id=&#34;level-1:acce8be8b0123631e58130cc34d7f08e&#34;&gt;Level 1&lt;/h1&gt;
 
@@ -30,7 +32,7 @@
 &lt;li&gt;download &lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/releases/download/0.4.0/jme3_xbuf_viewer-201507192026.tar.gz&#34;&gt;jme3_xbuf_viewer-201507192026.tar.gz&lt;/a&gt; + unarchive + run ./launch (or launch.exe)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;on-blender-2-73-http-www-blender-org:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On &lt;a href=&#34;http://www.blender.org/&#34;&gt;blender 2.73+&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;on-blender-2-74-http-www-blender-org:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On &lt;a href=&#34;http://www.blender.org/&#34;&gt;Blender 2.74+&lt;/a&gt;&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;click the &lt;strong&gt;&lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf/archive/master.zip&#34;&gt;Download ZIP&lt;/a&gt;&lt;/strong&gt; button on &lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf&#34;&gt;blender_io_xbuf&lt;/a&gt;&lt;/li&gt;
@@ -40,26 +42,28 @@
 &lt;li&gt;&lt;code&gt;File &amp;gt; User Preferences ... &amp;gt; Addons &amp;gt; Install from file ...&lt;/code&gt; select the downloaded zip file&lt;/li&gt;
 &lt;li&gt;enable the plugin &lt;strong&gt;Import-Export: Xbuf Exporter &amp;amp; Render Engine&lt;/strong&gt; (check the checkbox)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Open or create a model&lt;/li&gt;
-&lt;li&gt;select &amp;ldquo;xbuf&amp;rdquo; in the render engine combobox (top)&lt;/li&gt;
-&lt;li&gt;check the render properties (eg: the directory where to export images,&amp;hellip;)&lt;/li&gt;
-&lt;li&gt;in the 3D view select &amp;ldquo;viewport shading : rendered&amp;rdquo; could take/freeze a moment to trandfert the initial data.&lt;/li&gt;
-&lt;li&gt;You should see your model rendered via jme inside blender viewport, play with the camera, lights, &amp;hellip; (animation should store in a strip on NLA Editor, click on the strip)&lt;/li&gt;
+&lt;li&gt;open or create a model&lt;/li&gt;
+&lt;li&gt;select &lt;code&gt;Xbuf Render&lt;/code&gt; in the render engine combobox (top)&lt;/li&gt;
+&lt;li&gt;check the render properties (eg: &lt;code&gt;Xbuf &amp;gt; assets_path&lt;/code&gt; the directory where to export images, &amp;hellip;)&lt;/li&gt;
+&lt;li&gt;in the 3D view select &lt;code&gt;viewport shading &amp;gt; rendered&lt;/code&gt; could take/freeze a moment to transfer the initial data.&lt;/li&gt;
+&lt;li&gt;You should see your model rendered by jme3_xbuf_viewer inside blender viewport, play with the camera, lights, &amp;hellip; (animation should store in a strip on NLA Editor, click on the strip)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h1 id=&#34;level-2:acce8be8b0123631e58130cc34d7f08e&#34;&gt;Level 2&lt;/h1&gt;
 
-&lt;p&gt;Export your data from blender via &lt;code&gt;File &amp;gt; Export &amp;gt; xbuf&lt;/code&gt;, external assets like images are stored into the directory define in the Render property panel (when xbuf renderer is selected).&lt;/p&gt;
+&lt;h2 id=&#34;on-blender:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On Blender&lt;/h2&gt;
 
-&lt;p&gt;Load your xbuf data into your jme app :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;repeat steps 1 - 4 from Level 1 / On Blender&lt;/li&gt;
+&lt;li&gt;in the &lt;code&gt;Render Property Panel &amp;gt; Xbuf &amp;gt; assets_path&lt;/code&gt; set your target assets directory (eg: &lt;code&gt;myproject/assets&lt;/code&gt; or &lt;code&gt;myproject/src/main/resources&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;export your data from Blender via &lt;code&gt;File &amp;gt; Export &amp;gt; xbuf&lt;/code&gt;, tips : choose the same directory or a subdirectory of &lt;code&gt;assets_path&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;pre&gt;&lt;code&gt;import jme3_ext_xbuf.XbufLoader;
-...
-assetManager.registerLoader(XbufLoader.class, &amp;quot;xbuf&amp;quot;);
-Spatial s = assetManager.loadModel(&amp;quot;Models/xxxxx.xbuf&amp;quot;);
-&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;on-your-project-myproject:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On your project (myproject)&lt;/h2&gt;
 
-&lt;p&gt;dependencies setup :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;add jme3_xbuf_loader as a depencencies, eg for gradle :&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;pre&gt;&lt;code&gt;repositories {
 	mavenLocal()
@@ -68,90 +72,77 @@ Spatial s = assetManager.loadModel(&amp;quot;Models/xxxxx.xbuf&amp;quot;);
 	maven { url &amp;quot;https://jitpack.io&amp;quot; }
 }
 
+def jme3_xbuf_version = &#39;213c6a499d&#39;
+
 dependencies {
-  compile &#39;org.xbuf.jme3_xbuf:jme3_xbuf_loader:213c6a499d&#39;
+  compile &#39;org.xbuf.jme3_xbuf:jme3_xbuf_loader:${jme3_xbuf_version}&#39;
 ...
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;see &lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/tree/master/samples/xbuf_jaime&#34;&gt;samples/xbuf_jaime&lt;/a&gt; for a runnable sample.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://www.xbuf.org/about/</link>
-      <pubDate>Sat, 28 Mar 2015 18:34:43 +0100</pubDate>
-      
-      <guid>http://www.xbuf.org/about/</guid>
-      <description>
+&lt;ol&gt;
+&lt;li&gt;load your xbuf data into your jME app :&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;xbuf&lt;/strong&gt; is an exchange format usable to store scene, models, animations, &amp;hellip; in file or to edit scene over network. It takes inspiration from :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import jme3_ext_xbuf.XbufLoader;
+...
+assetManager.registerLoader(XbufLoader.class, &amp;quot;xbuf&amp;quot;);
+Spatial s = assetManager.loadModel(&amp;quot;Models/xxxxx.xbuf&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;run&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;See :&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://opengex.org/&#34;&gt;OpenGEX&lt;/a&gt; : as data to managed, and doc fragment I copied&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/KhronosGroup/glTF&#34;&gt;glTF&lt;/a&gt; : some discussions and some goals&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.blender.org/api/blender_python_api_2_72_release/&#34;&gt;blender api&lt;/a&gt; : how blender manages data&lt;/li&gt;
-&lt;li&gt;Entity-Component-System (ECS), RDF : as way to extends and to link data&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/tree/master/samples/simple&#34;&gt;samples/simple&lt;/a&gt; for a simplest code to load your model (model not include in this project).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/tree/master/samples/xbuf_jaime&#34;&gt;samples/xbuf_jaime&lt;/a&gt; for a runnable sample with Jaime, the jME&amp;rsquo;s mascot.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;xbuf is a binary format using &lt;a href=&#34;https://developers.google.com/protocol-buffers/&#34;&gt;Protocol Buffers (aka protobuf)&lt;/a&gt; to generate source code for java, C++, python,&amp;hellip; to read and write it. Then it&amp;rsquo;s more developer friendly than json, oddl, xml, or any text based dialect, without loosing flexibility via &lt;strong&gt;extensions&lt;/strong&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;level-3:acce8be8b0123631e58130cc34d7f08e&#34;&gt;Level 3&lt;/h1&gt;
 
-&lt;p&gt;The project would like to be an &lt;strong&gt;Community Format&lt;/strong&gt; shared by several engines, tools. It&amp;rsquo;s &lt;strong&gt;Open&lt;/strong&gt; to any contributions (code, discussion, issues, tools, &amp;hellip;).&lt;/p&gt;
+&lt;p&gt;Use your jME3 application (with all your scene, post-process, UI, &amp;hellip;) to render data from/to Blender.&lt;/p&gt;
 
-&lt;p&gt;License : &lt;a href=&#34;http://creativecommons.org/publicdomain/zero/1.0/&#34;&gt;Public domain (CC0-1.0)&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;on-your-project-myproject-1:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On your project (myproject)&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://xkcd.com/927/&#34;&gt;&lt;img src=&#34;http://imgs.xkcd.com/comics/standards.png&#34; alt=&#34;Standards&#34; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;add jme3_xbuf_loader as a depencencies, eg for gradle :&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h1 id=&#34;use-cases:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Use cases&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;repositories {
+	mavenLocal()
+	jcenter()
+	maven { url &amp;quot;http://updates.jmonkeyengine.org/maven/&amp;quot;}
+	maven { url &amp;quot;https://jitpack.io&amp;quot; }
+}
 
-&lt;ul&gt;
-&lt;li&gt;create importer/exporter for modeler, game engine, tool (optimizer, asset pipes&amp;hellip;)&lt;/li&gt;
-&lt;li&gt;create network exchange format between connected tool (eg : modeler &amp;lt;-&amp;gt; game engine with realtime rendering)&lt;/li&gt;
-&lt;/ul&gt;
+def jme3_xbuf_version = &#39;213c6a499d&#39;
 
-&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
-  &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/3pQd65_dkeM&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
-  &lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/p&gt;
+dependencies {
+  compile &#39;org.xbuf.jme3_xbuf:jme3_xbuf_loader:${jme3_xbuf_version}&#39;
+  compile &#39;org.xbuf.jme3_xbuf:jme3_xbuf_remote:${jme3_xbuf_version}&#39;
+...
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;download:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Download&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;load your xbuf data into your jME app :&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;You can download files from &lt;a href=&#34;https://bintray.com/package/files/davidb/maven/xbuf&#34;&gt;my repo&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import jme3_ext_remote_editor.AppState4RemoteCommand;
+import jme3_ext_xbuf.Xbuf;
+...
+app.setPauseOnLostFocus(false); //&amp;lt;-- Required else remote application will not receive image (eg: blender freeze)
+app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAssetManager())));
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;xbuf-x.y.z-proto.zip : archive with .proto files&lt;/li&gt;
-&lt;li&gt;xbuf-x.y.z-cpp.zip : archive with generated C++ source&lt;/li&gt;
-&lt;li&gt;xbuf-x.y.z-python.zip : archive with the xbuf modules (generated python)&lt;/li&gt;
-&lt;li&gt;xbuf-x.y.z.jar : the java archive with generated .class&lt;/li&gt;
-&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;run&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h1 id=&#34;documentation:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Documentation&lt;/h1&gt;
+&lt;h2 id=&#34;on-blender-1:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On Blender&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.xbuf.org/motivations&#34;&gt;Motivations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../faq0&#34;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../api&#34;&gt;API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../extensions-list&#34;&gt;Extensions List&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../tools&#34;&gt;Tools&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;links:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Links&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;discussions about xbuf in communities:
-
-&lt;ul&gt;
-&lt;li&gt;jMonkeyEngine : &lt;a href=&#34;http://hub.jmonkeyengine.org/t/xbuf-format-a-developper-friendly-game-exchange-format-for-3d-data/31130/19&#34;&gt;Xbuf format – A developper friendly game exchange format for 3d data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Ogre3D : &lt;a href=&#34;http://www.ogre3d.org/forums/viewtopic.php?f=1&amp;amp;t=82801&amp;amp;p=514877#p514877&#34;&gt;Ogre Forums • View topic - xbuf: call for help for an other 3D format&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;discussions about open format for 3D:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blenderartists.org/forum/showthread.php?348506-Alternative-to-FBX/page3&#34;&gt;Blender Artists: Alternative-to-FBX&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;see Level 1 / On Blender&lt;/p&gt;
 </description>
     </item>
     
@@ -177,9 +168,9 @@ dependencies {
 &lt;li&gt;uniform axis unit&lt;/li&gt;
 &lt;li&gt;front face: CCW (counter-clock-wise), back face: CW&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;distance unit : meter (float)&lt;/li&gt;
-&lt;li&gt;time unit : millisecond (int32)&lt;/li&gt;
-&lt;li&gt;angle unit : radian (float)&lt;/li&gt;
+&lt;li&gt;Distance unit : meter (float)&lt;/li&gt;
+&lt;li&gt;Time unit : millisecond (int32)&lt;/li&gt;
+&lt;li&gt;Angle unit : radian (float)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;I try to collect same data for game engine, tools, to help create importer/exporter. Help me to complete the &lt;a href=&#34;https://docs.google.com/spreadsheets/d/19FscoJzidZKF6Iqs1bqELv57Ds-t_dAbMD_XflrIUuk/edit?usp=sharing&#34;&gt;table&lt;/a&gt;&lt;/p&gt;
@@ -196,9 +187,9 @@ dependencies {
 &lt;p&gt;But there some ideas :&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;integrate some community&amp;rsquo; suggestions&lt;/li&gt;
-&lt;li&gt;ingrate compression  like &lt;a href=&#34;https://github.com/KhronosGroup/glTF/wiki/Open-3D-Graphics-Compression&#34;&gt;glTF: Open 3D Graphics Compression&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;define an archive format to store complementary data : textures, shaders, &amp;hellip;&lt;/li&gt;
+&lt;li&gt;Integrate some community&amp;rsquo; suggestions&lt;/li&gt;
+&lt;li&gt;Ingrate compression  like &lt;a href=&#34;https://github.com/KhronosGroup/glTF/wiki/Open-3D-Graphics-Compression&#34;&gt;glTF: Open 3D Graphics Compression&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Define an archive format to store complementary data : textures, shaders, &amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;how:4a1318da06786ac52626178ca960109e&#34;&gt;How &amp;hellip;&lt;/h1&gt;
@@ -206,8 +197,8 @@ dependencies {
 &lt;h2 id=&#34;how-can-i-protect-my-content:4a1318da06786ac52626178ca960109e&#34;&gt;How can I protect my content ?&lt;/h2&gt;
 
 &lt;ol&gt;
-&lt;li&gt;change the file extension&lt;/li&gt;
-&lt;li&gt;modify the file content, example of modifications (can be combined) :
+&lt;li&gt;Change the file extension&lt;/li&gt;
+&lt;li&gt;Modify the file content, example of modifications (can be combined) :
 
 &lt;ul&gt;
 &lt;li&gt;wrap into your own proto Message&lt;/li&gt;
@@ -223,42 +214,42 @@ dependencies {
 &lt;h2 id=&#34;why-not-opengex-http-opengex-org:4a1318da06786ac52626178ca960109e&#34;&gt;Why not &lt;a href=&#34;http://opengex.org/&#34;&gt;OpenGEX&lt;/a&gt; ?&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;except if you use &lt;a href=&#34;http://opengex.org/OpenGex-Import.zip&#34;&gt;OpenGEX Import Template&lt;/a&gt; (C++ only), it requires to write parser and low level writer, and writing good parser is hard.&lt;/li&gt;
-&lt;li&gt;text based, not optimal for network and realtime update&lt;/li&gt;
-&lt;li&gt;importer should support several metrics, orientation (Z up, Y up,&amp;hellip;)&lt;/li&gt;
+&lt;li&gt;Rxcept if you use &lt;a href=&#34;http://opengex.org/OpenGex-Import.zip&#34;&gt;OpenGEX Import Template&lt;/a&gt; (C++ only), it requires to write parser and low level writer, and writing good parser is hard.&lt;/li&gt;
+&lt;li&gt;Text based, not optimal for network and realtime update&lt;/li&gt;
+&lt;li&gt;Importer should support several metrics, several orientations (Z up, Y up,&amp;hellip;)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;why-not-gltf-https-github-com-khronosgroup-gltf:4a1318da06786ac52626178ca960109e&#34;&gt;Why not &lt;a href=&#34;https://github.com/KhronosGroup/glTF&#34;&gt;glTF&lt;/a&gt; ?&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;moving and heavy spec ;-)&lt;/li&gt;
-&lt;li&gt;json based, require to write &amp;ldquo;semantic&amp;rdquo; parser, converter.&lt;/li&gt;
+&lt;li&gt;Moving and heavy spec ;-)&lt;/li&gt;
+&lt;li&gt;Json based format requires to write &amp;ldquo;semantic&amp;rdquo; parser, converter.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;why-no-configurable-metrics-like-in-opengex:4a1318da06786ac52626178ca960109e&#34;&gt;Why no configurable metrics (like in OpenGEX) ?&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;to simplify the loader (less combinaison, less confusion) : &lt;em&gt;&amp;ldquo;convention over configuration&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;to ease share and merge of data&lt;/li&gt;
-&lt;li&gt;it&amp;rsquo;s the responsability of the exporter to write sharable data (from internal format to xbuf)&lt;/li&gt;
+&lt;li&gt;To simplify the loader (less composition to implement loader, less confusion) : &lt;em&gt;&amp;ldquo;convention over configuration&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;To ease share and merge of data (eg: merge multiples xbuf file)&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s the responsability of the exporter to write shareable data (from internal format to xbuf)&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;see discussion &lt;a href=&#34;https://github.com/KhronosGroup/glTF/issues/22&#34;&gt;glTF : unify scenes axis-up&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;why-no-configurable-up:4a1318da06786ac52626178ca960109e&#34;&gt;Why no configurable up ?&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;see &lt;em&gt;Why no configurable metrics (like in OpenGEX) ?&lt;/em&gt; (above)&lt;/li&gt;
-&lt;li&gt;To avoid branch in loader code like in this &lt;a href=&#34;http://answers.unity3d.com/questions/46589/zup-yup-xup-handedness-space-conversion.html&#34;&gt;response on unity forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;See &lt;em&gt;Why no configurable metrics (like in OpenGEX) ?&lt;/em&gt; (above).&lt;/li&gt;
+&lt;li&gt;To avoid branch in loader code like in this &lt;a href=&#34;http://answers.unity3d.com/questions/46589/zup-yup-xup-handedness-space-conversion.html&#34;&gt;response on unity forum&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;see discussion &lt;a href=&#34;https://github.com/KhronosGroup/glTF/issues/22&#34;&gt;glTF : unify scenes axis-up&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;why-no-transform-matrix-variant-of-rotation-scale:4a1318da06786ac52626178ca960109e&#34;&gt;Why no transform matrix, variant of Rotation, Scale ?&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;see &lt;em&gt;Why no configurable metrics (like in OpenGEX) ?&lt;/em&gt; (above)&lt;/li&gt;
+&lt;li&gt;See &lt;em&gt;Why no configurable metrics (like in OpenGEX) ?&lt;/em&gt; (above).&lt;/li&gt;
 &lt;li&gt;I don&amp;rsquo;t want too freedom (simple loader, more work on exporter), so I have to choose between matrix or translation / rotation / scale&lt;/li&gt;
-&lt;li&gt;Extracting translation / rotation / scale from a 4×4 matrix is harder than creating a 4×4 matrix from translation / rotation / scale is much easier.&lt;/li&gt;
-&lt;li&gt;Quaternion is often more animation friendly&lt;/li&gt;
+&lt;li&gt;Extracting translation / rotation / scale from a 4×4 matrix is harder than creating a 4×4 matrix from translation / rotation / scale.&lt;/li&gt;
+&lt;li&gt;Quaternion is often more animation friendly.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -2943,6 +2934,84 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://www.xbuf.org/about/</link>
+      <pubDate>Sat, 28 Mar 2015 18:34:43 +0100</pubDate>
+      
+      <guid>http://www.xbuf.org/about/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;xbuf&lt;/strong&gt; is an exchange format usable to store scene, models, animations, &amp;hellip; in file or to edit scene over network. It takes inspiration from :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://opengex.org/&#34;&gt;OpenGEX&lt;/a&gt; : as data to managed, and doc fragment I copied&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KhronosGroup/glTF&#34;&gt;glTF&lt;/a&gt; : some discussions and some goals&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.blender.org/api/blender_python_api_2_72_release/&#34;&gt;blender api&lt;/a&gt; : how blender manages data&lt;/li&gt;
+&lt;li&gt;Entity-Component-System (ECS), RDF : as way to extends and to link data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;xbuf is a binary format using &lt;a href=&#34;https://developers.google.com/protocol-buffers/&#34;&gt;Protocol Buffers (aka protobuf)&lt;/a&gt; to generate source code for java, C++, python,&amp;hellip; to read and write it. Then it&amp;rsquo;s more developer friendly than json, oddl, xml, or any text based dialect, without loosing flexibility via &lt;strong&gt;extensions&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The project would like to be an &lt;strong&gt;Community Format&lt;/strong&gt; shared by several engines, tools. It&amp;rsquo;s &lt;strong&gt;Open&lt;/strong&gt; to any contributions (code, discussion, issues, tools, &amp;hellip;).&lt;/p&gt;
+
+&lt;p&gt;License : &lt;a href=&#34;http://creativecommons.org/publicdomain/zero/1.0/&#34;&gt;Public domain (CC0-1.0)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://xkcd.com/927/&#34;&gt;&lt;img src=&#34;http://imgs.xkcd.com/comics/standards.png&#34; alt=&#34;Standards&#34; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;use-cases:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Use cases&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;create importer/exporter for modeler, game engine, tool (optimizer, asset pipes&amp;hellip;)&lt;/li&gt;
+&lt;li&gt;create network exchange format between connected tool (eg : modeler &amp;lt;-&amp;gt; game engine with realtime rendering)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
+  &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/3pQd65_dkeM&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+  &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;download:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Download&lt;/h1&gt;
+
+&lt;p&gt;You can download files from &lt;a href=&#34;https://bintray.com/package/files/davidb/maven/xbuf&#34;&gt;my repo&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;xbuf-x.y.z-proto.zip : archive with .proto files&lt;/li&gt;
+&lt;li&gt;xbuf-x.y.z-cpp.zip : archive with generated C++ source&lt;/li&gt;
+&lt;li&gt;xbuf-x.y.z-python.zip : archive with the xbuf modules (generated python)&lt;/li&gt;
+&lt;li&gt;xbuf-x.y.z.jar : the java archive with generated .class&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;documentation:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Documentation&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.xbuf.org/motivations&#34;&gt;Motivations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.xbuf.org/faq&#34;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.xbuf.org/api&#34;&gt;API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.xbuf.org/extensions-list&#34;&gt;Extensions List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.xbuf.org/tools&#34;&gt;Tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;links:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Links&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;discussions about xbuf in communities:
+
+&lt;ul&gt;
+&lt;li&gt;jMonkeyEngine : &lt;a href=&#34;http://hub.jmonkeyengine.org/t/xbuf-format-a-developper-friendly-game-exchange-format-for-3d-data/31130/19&#34;&gt;Xbuf format – A developper friendly game exchange format for 3d data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ogre3D : &lt;a href=&#34;http://www.ogre3d.org/forums/viewtopic.php?f=1&amp;amp;t=82801&amp;amp;p=514877#p514877&#34;&gt;Ogre Forums • View topic - xbuf: call for help for an other 3D format&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;discussions about open format for 3D:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blenderartists.org/forum/showthread.php?348506-Alternative-to-FBX/page3&#34;&gt;Blender Artists: Alternative-to-FBX&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
