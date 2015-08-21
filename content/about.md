@@ -2,6 +2,7 @@
 date = "2015-03-28T18:34:43+01:00"
 draft = false
 title = "About"
+weight = 10
 +++
 
 **xbuf** is an exchange format usable to store scene, models, animations, ... in file or to edit scene over network. It takes inspiration from :
@@ -37,11 +38,11 @@ You can download files from [my repo](https://bintray.com/package/files/davidb/m
 
 # Documentation
 
-* [Motivations](/motivations)
-* [FAQ](../faq0)
-* [API](../api)
-* [Extensions List](../extensions-list)
-* [Tools](../tools)
+* [Motivations]({{< relref "motivations.md" >}})
+* [FAQ]({{< relref "faq.md" >}})
+* [API]({{< relref "api.md" >}})
+* [Extensions List]({{< relref "extensions-list.md" >}})
+* [Tools]({{< relref "tools.md" >}})
 
 # Links
 
