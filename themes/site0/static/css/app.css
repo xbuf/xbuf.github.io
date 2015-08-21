@@ -102,13 +102,20 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
-/**
-CODE
-disable foundation style to let highlighter do the job
-*/
+/*
+ * CODE
+ * disable foundation style to let highlighter do the job
+ */
 pre code {
   background-color: inherit;
   border-color: inherit;
   border-style: none;
   border-width: inherit;
+}
+
+/*
+ * Custom
+ */
+#TableOfContents ul{
+  font-size: 80%;
 }
