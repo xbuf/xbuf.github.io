@@ -14,9 +14,9 @@ title = "FAQ"
   * orthogonal-axes
   * uniform axis unit
   * front face: CCW (counter-clock-wise), back face: CW
-* distance unit : meter (float)
-* time unit : millisecond (int32)
-* angle unit : radian (float)
+* Distance unit : meter (float)
+* Time unit : millisecond (int32)
+* Angle unit : radian (float)
 
 I try to collect same data for game engine, tools, to help create importer/exporter. Help me to complete the [table](https://docs.google.com/spreadsheets/d/19FscoJzidZKF6Iqs1bqELv57Ds-t_dAbMD_XflrIUuk/edit?usp=sharing)
 
@@ -32,16 +32,16 @@ I don't know ;-)
 
 But there some ideas :
 
-* integrate some community' suggestions
-* ingrate compression  like [glTF: Open 3D Graphics Compression](https://github.com/KhronosGroup/glTF/wiki/Open-3D-Graphics-Compression)
-* define an archive format to store complementary data : textures, shaders, ...
+* Integrate some community' suggestions
+* Ingrate compression  like [glTF: Open 3D Graphics Compression](https://github.com/KhronosGroup/glTF/wiki/Open-3D-Graphics-Compression)
+* Define an archive format to store complementary data : textures, shaders, ...
 
 # How ...
 
 ## How can I protect my content ?
 
-1. change the file extension
-2. modify the file content, example of modifications (can be combined) :
+1. Change the file extension
+2. Modify the file content, example of modifications (can be combined) :
   * wrap into your own proto Message
   * add an header at the begin of the file (a fixed or variable size of useless bytes, some license info)
   * encrypt : rot13, pgp, ...
@@ -52,31 +52,31 @@ But there some ideas :
 
 ## Why not [OpenGEX](http://opengex.org/) ?
 
-* except if you use [OpenGEX Import Template](http://opengex.org/OpenGex-Import.zip) (C++ only), it requires to write parser and low level writer, and writing good parser is hard.
-* text based, not optimal for network and realtime update
-* importer should support several metrics, orientation (Z up, Y up,...)
+* Rxcept if you use [OpenGEX Import Template](http://opengex.org/OpenGex-Import.zip) (C++ only), it requires to write parser and low level writer, and writing good parser is hard.
+* Text based, not optimal for network and realtime update
+* Importer should support several metrics, several orientations (Z up, Y up,...)
 
 ## Why not [glTF](https://github.com/KhronosGroup/glTF) ?
 
-* moving and heavy spec ;-)
-* json based, require to write "semantic" parser, converter.
+* Moving and heavy spec ;-)
+* Json based format requires to write "semantic" parser, converter.
 
 ## Why no configurable metrics (like in OpenGEX) ?
 
-* to simplify the loader (less combinaison, less confusion) : *"convention over configuration"*
-* to ease share and merge of data
-* it's the responsability of the exporter to write sharable data (from internal format to xbuf)
-
-see discussion [glTF : unify scenes axis-up](https://github.com/KhronosGroup/glTF/issues/22)
+* To simplify the loader (less composition to implement loader, less confusion) : *"convention over configuration"*
+* To ease share and merge of data (eg: merge multiples xbuf file)
+* It's the responsability of the exporter to write shareable data (from internal format to xbuf)
 
 ##  Why no configurable up ?
 
-* see *Why no configurable metrics (like in OpenGEX) ?* (above)
-* To avoid branch in loader code like in this [response on unity forum](http://answers.unity3d.com/questions/46589/zup-yup-xup-handedness-space-conversion.html)
+* See *Why no configurable metrics (like in OpenGEX) ?* (above).
+* To avoid branch in loader code like in this [response on unity forum](http://answers.unity3d.com/questions/46589/zup-yup-xup-handedness-space-conversion.html).
+
+see discussion [glTF : unify scenes axis-up](https://github.com/KhronosGroup/glTF/issues/22).
 
 ## Why no transform matrix, variant of Rotation, Scale ?
 
-* see *Why no configurable metrics (like in OpenGEX) ?* (above)
+* See *Why no configurable metrics (like in OpenGEX) ?* (above).
 * I don't want too freedom (simple loader, more work on exporter), so I have to choose between matrix or translation / rotation / scale
-* Extracting translation / rotation / scale from a 4×4 matrix is harder than creating a 4×4 matrix from translation / rotation / scale is much easier.
-* Quaternion is often more animation friendly
+* Extracting translation / rotation / scale from a 4×4 matrix is harder than creating a 4×4 matrix from translation / rotation / scale.
+* Quaternion is often more animation friendly.
