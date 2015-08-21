@@ -65,7 +65,7 @@
 &lt;li&gt;add jme3_xbuf_loader as a depencencies, eg for gradle :&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;pre&gt;&lt;code&gt;repositories {
+&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;repositories {
 	mavenLocal()
 	jcenter()
 	maven { url &amp;quot;http://updates.jmonkeyengine.org/maven/&amp;quot;}
@@ -83,7 +83,7 @@ dependencies {
 &lt;li&gt;load your xbuf data into your jME app :&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;pre&gt;&lt;code&gt;import jme3_ext_xbuf.XbufLoader;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;import jme3_ext_xbuf.XbufLoader;
 ...
 assetManager.registerLoader(XbufLoader.class, &amp;quot;xbuf&amp;quot;);
 Spatial s = assetManager.loadModel(&amp;quot;Models/xxxxx.xbuf&amp;quot;);
@@ -110,7 +110,7 @@ Spatial s = assetManager.loadModel(&amp;quot;Models/xxxxx.xbuf&amp;quot;);
 &lt;li&gt;add jme3_xbuf_loader as a depencencies, eg for gradle :&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;pre&gt;&lt;code&gt;repositories {
+&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;repositories {
 	mavenLocal()
 	jcenter()
 	maven { url &amp;quot;http://updates.jmonkeyengine.org/maven/&amp;quot;}
@@ -129,7 +129,7 @@ dependencies {
 &lt;li&gt;load your xbuf data into your jME app :&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;pre&gt;&lt;code&gt;import jme3_ext_remote_editor.AppState4RemoteCommand;
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;import jme3_ext_remote_editor.AppState4RemoteCommand;
 import jme3_ext_xbuf.Xbuf;
 ...
 app.setPauseOnLostFocus(false); //&amp;lt;-- Required else remote application will not receive image (eg: blender freeze)
