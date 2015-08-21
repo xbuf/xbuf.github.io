@@ -22,9 +22,9 @@ I try to collect same data for game engine, tools, to help create importer/expor
 
 ## What is the file extension ?
 
-```
+~~~
 .xbuf
-```
+~~~
 
 ## What is the future of the format ?
 
