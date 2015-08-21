@@ -21,7 +21,7 @@
 
 &lt;h1 id=&#34;level-1:acce8be8b0123631e58130cc34d7f08e&#34;&gt;Level 1&lt;/h1&gt;
 
-&lt;p&gt;The quickest way to give a try to jme3_xbuf : blender_io_xbuf + jme3_xbuf_viewer.&lt;/p&gt;
+&lt;p&gt;The quickest way to give a try : blender_io_xbuf + jme3_xbuf_viewer.&lt;/p&gt;
 
 &lt;h2 id=&#34;jme3-xbuf-viewer:acce8be8b0123631e58130cc34d7f08e&#34;&gt;jme3_xbuf_viewer&lt;/h2&gt;
 
@@ -2970,7 +2970,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 &lt;li&gt;create network exchange format between connected tool (eg : modeler &amp;lt;-&amp;gt; game engine with realtime rendering)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;p&gt;&lt;div class=&#34;flex-video&#34;&gt;
   &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/3pQd65_dkeM&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;
