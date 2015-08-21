@@ -40,7 +40,7 @@ Install a pre-configured application ready to connect to blender.
 ## On your project (myproject)
 
 1. add jme3_xbuf_loader as a depencencies, eg for gradle :
-```
+~~~groovy
 repositories {
 	mavenLocal()
 	jcenter()
@@ -53,14 +53,14 @@ def jme3_xbuf_version = '213c6a499d'
 dependencies {
   compile 'org.xbuf.jme3_xbuf:jme3_xbuf_loader:${jme3_xbuf_version}'
 ...
-```
-2. load your xbuf data into your jME app : 
-```
+~~~
+2. load your xbuf data into your jME app :
+~~~java
 import jme3_ext_xbuf.XbufLoader;
 ...
 assetManager.registerLoader(XbufLoader.class, "xbuf");
 Spatial s = assetManager.loadModel("Models/xxxxx.xbuf");
-```
+~~~
 3. run
 
 See :
@@ -75,7 +75,7 @@ Use your jME3 application (with all your scene, post-process, UI, ...) to render
 ## On your project (myproject)
 
 1. add jme3_xbuf_loader as a depencencies, eg for gradle :
-```
+~~~groovy
 repositories {
 	mavenLocal()
 	jcenter()
@@ -89,15 +89,15 @@ dependencies {
   compile 'org.xbuf.jme3_xbuf:jme3_xbuf_loader:${jme3_xbuf_version}'
   compile 'org.xbuf.jme3_xbuf:jme3_xbuf_remote:${jme3_xbuf_version}'
 ...
-```
-2. load your xbuf data into your jME app : 
-```
+~~~
+2. load your xbuf data into your jME app :
+~~~java
 import jme3_ext_remote_editor.AppState4RemoteCommand;
 import jme3_ext_xbuf.Xbuf;
 ...
 app.setPauseOnLostFocus(false); //<-- Required else remote application will not receive image (eg: blender freeze)
 app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAssetManager())));
-```
+~~~
 3. run
 
 ## On Blender
