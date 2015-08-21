@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-dark&languages=markup+css+clike+javascript+git+java+python+scala+yaml */
+/* http://prismjs.com/download.html?themes=prism-dark&languages=markup+css+clike+javascript+groovy+java+markdown+python+rust+yaml&plugins=autolinker */
 /**
  * prism.js Dark theme for JavaScript, CSS and HTML
  * Based on the slides of the talk “/Reg(exp){2}lained/”
@@ -126,3 +126,6 @@ pre[class*="language-"] {
 	color: red;
 }
 
+.token a {
+	color: inherit;
+}
