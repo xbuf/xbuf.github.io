@@ -8,7 +8,7 @@ In the tutoriel bellow I use jME3 as render engine, but xbuf is not limited to j
 
 # Level 1
 
-The quickest way to give a try to jme3_xbuf : blender_io_xbuf + jme3_xbuf_viewer.
+The quickest way to give a try : blender_io_xbuf + jme3_xbuf_viewer.
 
 ## jme3_xbuf_viewer
 
