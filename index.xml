@@ -29,7 +29,7 @@
 
 &lt;ol&gt;
 &lt;li&gt;install java 8&lt;/li&gt;
-&lt;li&gt;download &lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/releases/download/0.4.0/jme3_xbuf_viewer-201507192026.tar.gz&#34;&gt;jme3_xbuf_viewer-201507192026.tar.gz&lt;/a&gt; + unarchive + run ./launch (or launch.exe)&lt;/li&gt;
+&lt;li&gt;download &lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/releases/download/0.6.1/jme3_xbuf_viewer-201508242048.tgz&#34;&gt;jme3_xbuf_viewer-201508242048.tgz&lt;/a&gt; + unarchive + run ./launch (or launch.exe)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&#34;on-blender-2-74-http-www-blender-org:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On &lt;a href=&#34;http://www.blender.org/&#34;&gt;Blender 2.74+&lt;/a&gt;&lt;/h2&gt;
