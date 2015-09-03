@@ -1,6 +1,5 @@
 <aside class="small-3 small-pull-9 columns sidebar">
-  <h1>{{ .Site.Title }}</h1>
-  <img src="img/xbuf_logo_128x128.png" with="80%"/>
+  <h1><img src="{{ .Site.BaseUrl }}img/xbuf_logo.svg#layer1" alt="{{ .Site.Title }}"/></h1>
   <p>{{ with .Site.Params.Description }} {{.}} {{end}}</p>
   <div class="icon-bar vertical five-up">
     {{ range .Site.Menus.main }}
