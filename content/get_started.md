@@ -15,7 +15,7 @@ The quickest way to give a try : blender_io_xbuf + jme3_xbuf_viewer.
 Install a pre-configured application ready to connect to blender.
 
 1. install java 8
-2. download [jme3_xbuf_viewer-201508242048.tgz](https://github.com/xbuf/jme3_xbuf/releases/download/0.6.1/jme3_xbuf_viewer-201508242048.tgz) + unarchive + run ./launch (or launch.exe)
+2. download [jme3_xbuf_viewer-0.7.2.zip](https://github.com/xbuf/jme3_xbuf/releases/download/0.7.2/jme3_xbuf_viewer-0.7.2.zip) + unarchive + run ./launch (or launch.exe)
 
 ## On [Blender 2.74+](http://www.blender.org/)
 
