@@ -17,7 +17,7 @@ Install a pre-configured application ready to connect to blender.
 1. install java 8
 2. download [jme3_xbuf_viewer-201510171736.tgz](https://github.com/xbuf/jme3_xbuf/releases/download/0.7.2/jme3_xbuf_viewer-201510171736.tgz) + unarchive + run ./launch (or launch.exe)
 
-## On [Blender 2.74+](http://www.blender.org/)
+## On Blender 2.74+
 
 1. click the **[Download ZIP](https://github.com/xbuf/blender_io_xbuf/archive/master.zip)** button on [blender_io_xbuf](https://github.com/xbuf/blender_io_xbuf)
 2. install add-on into blender
