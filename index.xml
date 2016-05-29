@@ -6,8 +6,46 @@
     <description>Recent content on xbuf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Aug 2015 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2015 00:00:00 +0100</lastBuildDate>
     <atom:link href="http://www.xbuf.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Setup Blender</title>
+      <link>http://www.xbuf.org/tuto_jme01/</link>
+      <pubDate>Sun, 18 Oct 2015 00:00:00 +0100</pubDate>
+      
+      <guid>http://www.xbuf.org/tuto_jme01/</guid>
+      <description>
+
+&lt;p&gt;The quickest way to give a try : blender_io_xbuf&lt;/p&gt;
+
+&lt;h1 id=&#34;jme3-xbuf-viewer:c638c81eb434616f32686e9b854876b9&#34;&gt;jme3_xbuf_viewer&lt;/h1&gt;
+
+&lt;p&gt;Install a pre-configured application ready to connect to blender.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;install java 8&lt;/li&gt;
+&lt;li&gt;download &lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/releases/download/0.7.2/jme3_xbuf_viewer-201510171736.tgz&#34;&gt;jme3_xbuf_viewer-201510171736.tgz&lt;/a&gt; + unarchive + run ./launch (or launch.exe)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;on-blender-2-74:c638c81eb434616f32686e9b854876b9&#34;&gt;On Blender 2.74+&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;click the &lt;strong&gt;&lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf/archive/master.zip&#34;&gt;Download ZIP&lt;/a&gt;&lt;/strong&gt; button on &lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf&#34;&gt;blender_io_xbuf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;install add-on into blender
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;File &amp;gt; User Preferences ... &amp;gt; Addons &amp;gt; Install from file ...&lt;/code&gt; select the downloaded zip file&lt;/li&gt;
+&lt;li&gt;enable the plugin &lt;strong&gt;Import-Export: Xbuf Exporter &amp;amp; Render Engine&lt;/strong&gt; (check the checkbox)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;open or create a model&lt;/li&gt;
+&lt;li&gt;select &lt;code&gt;Xbuf Render&lt;/code&gt; in the render engine combobox (top)&lt;/li&gt;
+&lt;li&gt;check the render properties (eg: &lt;code&gt;Xbuf &amp;gt; assets_path&lt;/code&gt; the directory where to export images, &amp;hellip;)&lt;/li&gt;
+&lt;li&gt;in the 3D view select &lt;code&gt;viewport shading &amp;gt; rendered&lt;/code&gt; could take/freeze a moment to transfer the initial data.&lt;/li&gt;
+&lt;li&gt;You should see your model rendered by jme3_xbuf_viewer inside blender viewport, play with the camera, lights, &amp;hellip; (animation should store in a strip on NLA Editor, click on the strip)&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>Get started</title>
@@ -32,7 +70,7 @@
 &lt;li&gt;download &lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/releases/download/0.7.2/jme3_xbuf_viewer-201510171736.tgz&#34;&gt;jme3_xbuf_viewer-201510171736.tgz&lt;/a&gt; + unarchive + run ./launch (or launch.exe)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;on-blender-2-74-http-www-blender-org:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On &lt;a href=&#34;http://www.blender.org/&#34;&gt;Blender 2.74+&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;on-blender-2-74:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On Blender 2.74+&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;click the &lt;strong&gt;&lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf/archive/master.zip&#34;&gt;Download ZIP&lt;/a&gt;&lt;/strong&gt; button on &lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf&#34;&gt;blender_io_xbuf&lt;/a&gt;&lt;/li&gt;

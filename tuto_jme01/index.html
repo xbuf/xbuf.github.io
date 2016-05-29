@@ -1,0 +1,109 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+  <title> Setup Blender &middot; xbuf </title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+  <link rel="stylesheet" href="http://www.xbuf.org/css/foundation.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="http://www.xbuf.org/css/app.css" />
+
+  <link href='//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.xbuf.org/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://www.xbuf.org/favicon.ico">
+
+  
+  <script src="http://www.xbuf.org/js/vendor/modernizr.js"></script>
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="xbuf" />
+
+  <link rel="stylesheet" href="http://www.xbuf.org/css/prism.css" />
+
+</head>
+
+<body>
+<div class="">
+
+<div class="small-9 small-push-3 columns">
+
+<header class="row">
+  <div class="small-12 columns">
+    <h1 class="text-center"><a href="http://www.xbuf.org/tuto_jme01/">Setup Blender</a></h1>
+  </div>
+</header>
+
+<div class="row">
+  <div class="small-12 columns">
+    <span class="post-date">Sun, Oct 18, 2015</span>
+    
+
+<p>The quickest way to give a try : blender_io_xbuf</p>
+
+<h1 id="jme3-xbuf-viewer:c638c81eb434616f32686e9b854876b9">jme3_xbuf_viewer</h1>
+
+<p>Install a pre-configured application ready to connect to blender.</p>
+
+<ol>
+<li>install java 8</li>
+<li>download <a href="https://github.com/xbuf/jme3_xbuf/releases/download/0.7.2/jme3_xbuf_viewer-201510171736.tgz">jme3_xbuf_viewer-201510171736.tgz</a> + unarchive + run ./launch (or launch.exe)</li>
+</ol>
+
+<h1 id="on-blender-2-74:c638c81eb434616f32686e9b854876b9">On Blender 2.74+</h1>
+
+<ol>
+<li>click the <strong><a href="https://github.com/xbuf/blender_io_xbuf/archive/master.zip">Download ZIP</a></strong> button on <a href="https://github.com/xbuf/blender_io_xbuf">blender_io_xbuf</a></li>
+<li>install add-on into blender
+
+<ul>
+<li><code>File &gt; User Preferences ... &gt; Addons &gt; Install from file ...</code> select the downloaded zip file</li>
+<li>enable the plugin <strong>Import-Export: Xbuf Exporter &amp; Render Engine</strong> (check the checkbox)</li>
+</ul></li>
+<li>open or create a model</li>
+<li>select <code>Xbuf Render</code> in the render engine combobox (top)</li>
+<li>check the render properties (eg: <code>Xbuf &gt; assets_path</code> the directory where to export images, &hellip;)</li>
+<li>in the 3D view select <code>viewport shading &gt; rendered</code> could take/freeze a moment to transfer the initial data.</li>
+<li>You should see your model rendered by jme3_xbuf_viewer inside blender viewport, play with the camera, lights, &hellip; (animation should store in a strip on NLA Editor, click on the strip)</li>
+</ol>
+
+  </div>
+</div>
+</div>
+
+<aside class="small-3 small-pull-9 columns sidebar">
+  <h1><img src="http://www.xbuf.org/img/xbuf_logo.svg#layer1" alt="xbuf"/></h1>
+  <p> An exchange format for 3D scenes, models, animations, … </p>
+  <div class="icon-bar vertical five-up">
+    
+  </div>
+  <div id="toc" class="small-12 columns">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#jme3-xbuf-viewer:c638c81eb434616f32686e9b854876b9">jme3_xbuf_viewer</a></li>
+<li><a href="#on-blender-2-74:c638c81eb434616f32686e9b854876b9">On Blender 2.74+</a></li>
+</ul>
+</nav>
+  </div>
+
+<p>Public domain (CC0-1.0)</p>
+</aside>
+
+</div>
+<script src="http://www.xbuf.org/js/vendor/jquery.js"></script>
+<script src="http://www.xbuf.org/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+<script src="http://www.xbuf.org/js/prism.js"></script>
+
+  </body>
+</html>
+
