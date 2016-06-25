@@ -25,7 +25,7 @@ Install a pre-configured application ready to connect to blender.
   * enable the plugin **Import-Export: Xbuf Exporter & Render Engine** (check the checkbox)
 3. open or create a model
 4. select `Xbuf Render` in the render engine combobox (top)
-5. check the render properties (eg: `Xbuf > assets_path` the directory where to export images, ...)
+5. set the render properties. To see them, click on the camera in the property sheet. (eg: `Xbuf > assets_path` the directory where to export images, ... so mostly `myproject/assets` or `myproject/src/main/resources`)
 6. in the 3D view select `viewport shading > rendered` could take/freeze a moment to transfer the initial data.
 7. You should see your model rendered by jme3_xbuf_viewer inside blender viewport, play with the camera, lights, ... (animation should store in a strip on NLA Editor, click on the strip)
 
@@ -33,9 +33,8 @@ Install a pre-configured application ready to connect to blender.
 
 ## On Blender
 
-1. repeat steps 1 - 4 from Level 1 / On Blender
-2. in the `Render Property Panel > Xbuf > assets_path` set your target assets directory (eg: `myproject/assets` or `myproject/src/main/resources`)
-3. export your data from Blender via `File > Export > xbuf`, tips : choose the same directory or a subdirectory of `assets_path`
+1. repeat steps 1 - 5 from Level 1 / On Blender
+2. export your data from Blender via `File > Export > xbuf`, tips : choose the same directory or a subdirectory of `assets_path`
 
 ## On your project (myproject)
 
