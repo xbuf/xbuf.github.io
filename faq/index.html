@@ -10,26 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   
-  <link rel="stylesheet" href="http://www.xbuf.org/css/foundation.css" />
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-  <link rel="stylesheet" href="http://www.xbuf.org/css/app.css" />
-
-  <link href='//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
-
-  
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.xbuf.org/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="http://www.xbuf.org/favicon.ico">
-
-  
-  <script src="http://www.xbuf.org/js/vendor/modernizr.js"></script>
-
-  
-  <link href="" rel="alternate" type="application/rss+xml" title="xbuf" />
-
-  <link rel="stylesheet" href="http://www.xbuf.org/css/prism.css" />
-
-</head>
-
+  <link rel="stylesheet" href="
 <body>
 <div class="">
 
@@ -37,7 +18,7 @@
 
 <header class="row">
   <div class="small-12 columns">
-    <h1 class="text-center"><a href="http://www.xbuf.org/faq/">FAQ</a></h1>
+    <h1 class="text-center"><a href="http://xbuf.github.io/faq/">FAQ</a></h1>
   </div>
 </header>
 
@@ -46,9 +27,9 @@
     <span class="post-date">Wed, Feb 18, 2015</span>
     
 
-<h1 id="what:4a1318da06786ac52626178ca960109e">What &hellip;</h1>
+<h1 id="what">What &hellip;</h1>
 
-<h2 id="what-are-the-units-coordinate-system:4a1318da06786ac52626178ca960109e">What are the units, coordinate system ?</h2>
+<h2 id="what-are-the-units-coordinate-system">What are the units, coordinate system ?</h2>
 
 <ul>
 <li>Coordinate system : Right Handled
@@ -67,12 +48,12 @@
 
 <p>I try to collect same data for game engine, tools, to help create importer/exporter. Help me to complete the <a href="https://docs.google.com/spreadsheets/d/19FscoJzidZKF6Iqs1bqELv57Ds-t_dAbMD_XflrIUuk/edit?usp=sharing">table</a></p>
 
-<h2 id="what-is-the-file-extension:4a1318da06786ac52626178ca960109e">What is the file extension ?</h2>
+<h2 id="what-is-the-file-extension">What is the file extension ?</h2>
 
 <pre><code>.xbuf
 </code></pre>
 
-<h2 id="what-is-the-future-of-the-format:4a1318da06786ac52626178ca960109e">What is the future of the format ?</h2>
+<h2 id="what-is-the-future-of-the-format">What is the future of the format ?</h2>
 
 <p>I don&rsquo;t know ;-)</p>
 
@@ -84,9 +65,9 @@
 <li>Define an archive format to store complementary data : textures, shaders, &hellip;</li>
 </ul>
 
-<h1 id="how:4a1318da06786ac52626178ca960109e">How &hellip;</h1>
+<h1 id="how">How &hellip;</h1>
 
-<h2 id="how-can-i-protect-my-content:4a1318da06786ac52626178ca960109e">How can I protect my content ?</h2>
+<h2 id="how-can-i-protect-my-content">How can I protect my content ?</h2>
 
 <ol>
 <li>Change the file extension</li>
@@ -101,9 +82,9 @@
 </ul></li>
 </ol>
 
-<h1 id="why:4a1318da06786ac52626178ca960109e">Why &hellip;</h1>
+<h1 id="why">Why &hellip;</h1>
 
-<h2 id="why-not-opengex-http-opengex-org:4a1318da06786ac52626178ca960109e">Why not <a href="http://opengex.org/">OpenGEX</a> ?</h2>
+<h2 id="why-not-opengex-http-opengex-org">Why not <a href="http://opengex.org/">OpenGEX</a> ?</h2>
 
 <ul>
 <li>Rxcept if you use <a href="http://opengex.org/OpenGex-Import.zip">OpenGEX Import Template</a> (C++ only), it requires to write parser and low level writer, and writing good parser is hard.</li>
@@ -111,14 +92,14 @@
 <li>Importer should support several metrics, several orientations (Z up, Y up,&hellip;)</li>
 </ul>
 
-<h2 id="why-not-gltf-https-github-com-khronosgroup-gltf:4a1318da06786ac52626178ca960109e">Why not <a href="https://github.com/KhronosGroup/glTF">glTF</a> ?</h2>
+<h2 id="why-not-gltf-https-github-com-khronosgroup-gltf">Why not <a href="https://github.com/KhronosGroup/glTF">glTF</a> ?</h2>
 
 <ul>
 <li>Moving and heavy spec ;-)</li>
 <li>Json based format requires to write &ldquo;semantic&rdquo; parser, converter.</li>
 </ul>
 
-<h2 id="why-no-configurable-metrics-like-in-opengex:4a1318da06786ac52626178ca960109e">Why no configurable metrics (like in OpenGEX) ?</h2>
+<h2 id="why-no-configurable-metrics-like-in-opengex">Why no configurable metrics (like in OpenGEX) ?</h2>
 
 <ul>
 <li>To simplify the loader (less composition to implement loader, less confusion) : <em>&ldquo;convention over configuration&rdquo;</em></li>
@@ -126,7 +107,7 @@
 <li>It&rsquo;s the responsability of the exporter to write shareable data (from internal format to xbuf)</li>
 </ul>
 
-<h2 id="why-no-configurable-up:4a1318da06786ac52626178ca960109e">Why no configurable up ?</h2>
+<h2 id="why-no-configurable-up">Why no configurable up ?</h2>
 
 <ul>
 <li>See <em>Why no configurable metrics (like in OpenGEX) ?</em> (above).</li>
@@ -135,7 +116,7 @@
 
 <p>see discussion <a href="https://github.com/KhronosGroup/glTF/issues/22">glTF : unify scenes axis-up</a>.</p>
 
-<h2 id="why-no-transform-matrix-variant-of-rotation-scale:4a1318da06786ac52626178ca960109e">Why no transform matrix, variant of Rotation, Scale ?</h2>
+<h2 id="why-no-transform-matrix-variant-of-rotation-scale">Why no transform matrix, variant of Rotation, Scale ?</h2>
 
 <ul>
 <li>See <em>Why no configurable metrics (like in OpenGEX) ?</em> (above).</li>
@@ -149,47 +130,9 @@
 </div>
 
 <aside class="small-3 small-pull-9 columns sidebar">
-  <h1><img src="http://www.xbuf.org/img/xbuf_logo.svg#layer1" alt="xbuf"/></h1>
-  <p> An exchange format for 3D scenes, models, animations, … </p>
-  <div class="icon-bar vertical five-up">
-    
-  </div>
-  <div id="toc" class="small-12 columns">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#what:4a1318da06786ac52626178ca960109e">What &hellip;</a>
-<ul>
-<li><a href="#what-are-the-units-coordinate-system:4a1318da06786ac52626178ca960109e">What are the units, coordinate system ?</a></li>
-<li><a href="#what-is-the-file-extension:4a1318da06786ac52626178ca960109e">What is the file extension ?</a></li>
-<li><a href="#what-is-the-future-of-the-format:4a1318da06786ac52626178ca960109e">What is the future of the format ?</a></li>
-</ul></li>
-<li><a href="#how:4a1318da06786ac52626178ca960109e">How &hellip;</a>
-<ul>
-<li><a href="#how-can-i-protect-my-content:4a1318da06786ac52626178ca960109e">How can I protect my content ?</a></li>
-</ul></li>
-<li><a href="#why:4a1318da06786ac52626178ca960109e">Why &hellip;</a>
-<ul>
-<li><a href="#why-not-opengex-http-opengex-org:4a1318da06786ac52626178ca960109e">Why not <a href="http://opengex.org/">OpenGEX</a> ?</a></li>
-<li><a href="#why-not-gltf-https-github-com-khronosgroup-gltf:4a1318da06786ac52626178ca960109e">Why not <a href="https://github.com/KhronosGroup/glTF">glTF</a> ?</a></li>
-<li><a href="#why-no-configurable-metrics-like-in-opengex:4a1318da06786ac52626178ca960109e">Why no configurable metrics (like in OpenGEX) ?</a></li>
-<li><a href="#why-no-configurable-up:4a1318da06786ac52626178ca960109e">Why no configurable up ?</a></li>
-<li><a href="#why-no-transform-matrix-variant-of-rotation-scale:4a1318da06786ac52626178ca960109e">Why no transform matrix, variant of Rotation, Scale ?</a></li>
-</ul></li>
-</ul>
-</nav>
-  </div>
-
-<p>Public domain (CC0-1.0)</p>
-</aside>
-
+  <h1><img src="
 </div>
-<script src="http://www.xbuf.org/js/vendor/jquery.js"></script>
-<script src="http://www.xbuf.org/js/foundation.min.js"></script>
-<script>
-  $(document).foundation();
-</script>
-<script src="http://www.xbuf.org/js/prism.js"></script>
-
+<script src="
   </body>
 </html>
 

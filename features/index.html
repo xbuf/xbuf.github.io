@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
 <head>
-  <title> Tutorial &middot; xbuf </title>
+  <title> Features &middot; xbuf </title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta charset="utf-8" />
@@ -18,19 +18,37 @@
 
 <header class="row">
   <div class="small-12 columns">
-    <h1 class="text-center"><a href="http://xbuf.github.io/tags/tutorial/">Tutorial</a></h1>
+    <h1 class="text-center"><a href="http://xbuf.github.io/features/">Features</a></h1>
   </div>
 </header>
 
 <div class="row">
   <div class="small-12 columns">
-    <ul class="posts">
-        
-        <li>
-          <span><a href="http://xbuf.github.io/tuto_jme01/">Setup Blender</a> <time class="pull-right post-list">Sun, Oct 18, 2015</time></span>
-        </li>
-        
-    </ul>
+    <span class="post-date">Wed, Feb 18, 2015</span>
+    <table>
+  <thead>
+    <tr>
+    <th>Name</th>
+    <th>Format</th>
+    <th>Blender</th>
+    <th>jME3</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{ $url := "data/features.cvs" }}
+  {{ $sep := "," }}
+  {{ range $i, $r := getCSV $sep $url }}
+    <tr>
+      <td>{{ index $r 0 }}</td>
+      <td>{{ index $r 1 }}</td>
+      <td>{{ index $r 1 }}</td>
+      <td>{{ index $r 1 }}</td>
+      <td>{{ index $r 1 }}</td>
+    </tr>
+  {{ end }}
+  </tbody>
+</table>
+
   </div>
 </div>
 </div>

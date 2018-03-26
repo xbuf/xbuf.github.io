@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on xbuf</title>
-    <link>http://www.xbuf.org/tags/tutorial/</link>
+    <link>http://xbuf.github.io/tags/tutorial/</link>
     <description>Recent content in Tutorial on xbuf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Oct 2015 00:00:00 +0100</lastBuildDate>
-    <atom:link href="http://www.xbuf.org/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://xbuf.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Setup Blender</title>
-      <link>http://www.xbuf.org/tuto_jme01/</link>
+      <link>http://xbuf.github.io/tuto_jme01/</link>
       <pubDate>Sun, 18 Oct 2015 00:00:00 +0100</pubDate>
       
-      <guid>http://www.xbuf.org/tuto_jme01/</guid>
+      <guid>http://xbuf.github.io/tuto_jme01/</guid>
       <description>
 
 &lt;p&gt;The quickest way to give a try : blender_io_xbuf&lt;/p&gt;
 
-&lt;h1 id=&#34;jme3-xbuf-viewer:c638c81eb434616f32686e9b854876b9&#34;&gt;jme3_xbuf_viewer&lt;/h1&gt;
+&lt;h1 id=&#34;jme3-xbuf-viewer&#34;&gt;jme3_xbuf_viewer&lt;/h1&gt;
 
 &lt;p&gt;Install a pre-configured application ready to connect to blender.&lt;/p&gt;
 
@@ -28,7 +28,7 @@
 &lt;li&gt;download &lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/releases/download/0.7.2/jme3_xbuf_viewer-201510171736.tgz&#34;&gt;jme3_xbuf_viewer-201510171736.tgz&lt;/a&gt; + unarchive + run ./launch (or launch.exe)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;on-blender-2-74:c638c81eb434616f32686e9b854876b9&#34;&gt;On Blender 2.74+&lt;/h1&gt;
+&lt;h1 id=&#34;on-blender-2-74&#34;&gt;On Blender 2.74+&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;click the &lt;strong&gt;&lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf/archive/master.zip&#34;&gt;Download ZIP&lt;/a&gt;&lt;/strong&gt; button on &lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf&#34;&gt;blender_io_xbuf&lt;/a&gt;&lt;/li&gt;

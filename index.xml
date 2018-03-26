@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>xbuf</title>
-    <link>http://www.xbuf.org/</link>
+    <link>http://xbuf.github.io/</link>
     <description>Recent content on xbuf</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Oct 2015 00:00:00 +0100</lastBuildDate>
-    <atom:link href="http://www.xbuf.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://xbuf.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Setup Blender</title>
-      <link>http://www.xbuf.org/tuto_jme01/</link>
+      <link>http://xbuf.github.io/tuto_jme01/</link>
       <pubDate>Sun, 18 Oct 2015 00:00:00 +0100</pubDate>
       
-      <guid>http://www.xbuf.org/tuto_jme01/</guid>
+      <guid>http://xbuf.github.io/tuto_jme01/</guid>
       <description>
 
 &lt;p&gt;The quickest way to give a try : blender_io_xbuf&lt;/p&gt;
 
-&lt;h1 id=&#34;jme3-xbuf-viewer:c638c81eb434616f32686e9b854876b9&#34;&gt;jme3_xbuf_viewer&lt;/h1&gt;
+&lt;h1 id=&#34;jme3-xbuf-viewer&#34;&gt;jme3_xbuf_viewer&lt;/h1&gt;
 
 &lt;p&gt;Install a pre-configured application ready to connect to blender.&lt;/p&gt;
 
@@ -28,7 +28,7 @@
 &lt;li&gt;download &lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/releases/download/0.7.2/jme3_xbuf_viewer-201510171736.tgz&#34;&gt;jme3_xbuf_viewer-201510171736.tgz&lt;/a&gt; + unarchive + run ./launch (or launch.exe)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;on-blender-2-74:c638c81eb434616f32686e9b854876b9&#34;&gt;On Blender 2.74+&lt;/h1&gt;
+&lt;h1 id=&#34;on-blender-2-74&#34;&gt;On Blender 2.74+&lt;/h1&gt;
 
 &lt;ol&gt;
 &lt;li&gt;click the &lt;strong&gt;&lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf/archive/master.zip&#34;&gt;Download ZIP&lt;/a&gt;&lt;/strong&gt; button on &lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf&#34;&gt;blender_io_xbuf&lt;/a&gt;&lt;/li&gt;
@@ -49,19 +49,19 @@
     
     <item>
       <title>Get started</title>
-      <link>http://www.xbuf.org/get_started/</link>
+      <link>http://xbuf.github.io/get_started/</link>
       <pubDate>Fri, 21 Aug 2015 00:00:00 +0100</pubDate>
       
-      <guid>http://www.xbuf.org/get_started/</guid>
+      <guid>http://xbuf.github.io/get_started/</guid>
       <description>
 
 &lt;p&gt;In the tutoriel bellow I use jME3 as render engine, but xbuf is not limited to jME3. It&amp;rsquo;s just the first target engine I work on.&lt;/p&gt;
 
-&lt;h1 id=&#34;level-1:acce8be8b0123631e58130cc34d7f08e&#34;&gt;Level 1&lt;/h1&gt;
+&lt;h1 id=&#34;level-1&#34;&gt;Level 1&lt;/h1&gt;
 
 &lt;p&gt;The quickest way to give a try : blender_io_xbuf + jme3_xbuf_viewer.&lt;/p&gt;
 
-&lt;h2 id=&#34;jme3-xbuf-viewer:acce8be8b0123631e58130cc34d7f08e&#34;&gt;jme3_xbuf_viewer&lt;/h2&gt;
+&lt;h2 id=&#34;jme3-xbuf-viewer&#34;&gt;jme3_xbuf_viewer&lt;/h2&gt;
 
 &lt;p&gt;Install a pre-configured application ready to connect to blender.&lt;/p&gt;
 
@@ -70,7 +70,7 @@
 &lt;li&gt;download &lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/releases/download/0.7.2/jme3_xbuf_viewer-201510171736.tgz&#34;&gt;jme3_xbuf_viewer-201510171736.tgz&lt;/a&gt; + unarchive + run ./launch (or launch.exe)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;on-blender-2-74:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On Blender 2.74+&lt;/h2&gt;
+&lt;h2 id=&#34;on-blender-2-74&#34;&gt;On Blender 2.74+&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;click the &lt;strong&gt;&lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf/archive/master.zip&#34;&gt;Download ZIP&lt;/a&gt;&lt;/strong&gt; button on &lt;a href=&#34;https://github.com/xbuf/blender_io_xbuf&#34;&gt;blender_io_xbuf&lt;/a&gt;&lt;/li&gt;
@@ -87,40 +87,37 @@
 &lt;li&gt;You should see your model rendered by jme3_xbuf_viewer inside blender viewport, play with the camera, lights, &amp;hellip; (animation should store in a strip on NLA Editor, click on the strip)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;level-2:acce8be8b0123631e58130cc34d7f08e&#34;&gt;Level 2&lt;/h1&gt;
+&lt;h1 id=&#34;level-2&#34;&gt;Level 2&lt;/h1&gt;
 
-&lt;h2 id=&#34;on-blender:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On Blender&lt;/h2&gt;
+&lt;h2 id=&#34;on-blender&#34;&gt;On Blender&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;repeat steps 1 - 5 from Level 1 / On Blender&lt;/li&gt;
 &lt;li&gt;export your data from Blender via &lt;code&gt;File &amp;gt; Export &amp;gt; xbuf&lt;/code&gt;, tips : choose the same directory or a subdirectory of &lt;code&gt;assets_path&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;on-your-project-myproject:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On your project (myproject)&lt;/h2&gt;
+&lt;h2 id=&#34;on-your-project-myproject&#34;&gt;On your project (myproject)&lt;/h2&gt;
 
 &lt;ol&gt;
-&lt;li&gt;add jme3_xbuf_loader as a depencencies, eg for gradle :&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;repositories {
+&lt;li&gt;add jme3_xbuf_loader as a depencencies, eg for gradle :
+~~~groovy
+repositories {
 	mavenLocal()
 	jcenter()
-	maven { url &amp;quot;http://updates.jmonkeyengine.org/maven/&amp;quot;}
-	maven { url &amp;quot;https://jitpack.io&amp;quot; }
-}
-
-def jme3_xbuf_version = &#39;213c6a499d&#39;
-
-dependencies {
-  compile &#39;org.xbuf.jme3_xbuf:jme3_xbuf_loader:${jme3_xbuf_version}&#39;
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ol&gt;
-&lt;li&gt;load your xbuf data into your jME app :&lt;/li&gt;
+	maven { url &amp;ldquo;&lt;a href=&#34;http://updates.jmonkeyengine.org/maven/&amp;quot;&#34;&gt;http://updates.jmonkeyengine.org/maven/&amp;quot;&lt;/a&gt;}
+	maven { url &amp;ldquo;&lt;a href=&#34;https://jitpack.io&amp;quot;&#34;&gt;https://jitpack.io&amp;quot;&lt;/a&gt; }
+}&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;import jme3_ext_xbuf.XbufLoader;
+&lt;p&gt;def jme3_xbuf_version = &amp;lsquo;213c6a499d&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;dependencies {
+  compile &amp;lsquo;org.xbuf.jme3_xbuf:jme3_xbuf_loader:${jme3_xbuf_version}&amp;rsquo;
+&amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2. load your xbuf data into your jME app :
+~~~java
+import jme3_ext_xbuf.XbufLoader;
 ...
 assetManager.registerLoader(XbufLoader.class, &amp;quot;xbuf&amp;quot;);
 Spatial s = assetManager.loadModel(&amp;quot;Models/xxxxx.xbuf&amp;quot;);
@@ -137,36 +134,33 @@ Spatial s = assetManager.loadModel(&amp;quot;Models/xxxxx.xbuf&amp;quot;);
 &lt;li&gt;&lt;a href=&#34;https://github.com/xbuf/jme3_xbuf/tree/master/samples/xbuf_jaime&#34;&gt;samples/xbuf_jaime&lt;/a&gt; for a runnable sample with Jaime, the jME&amp;rsquo;s mascot.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;level-3:acce8be8b0123631e58130cc34d7f08e&#34;&gt;Level 3&lt;/h1&gt;
+&lt;h1 id=&#34;level-3&#34;&gt;Level 3&lt;/h1&gt;
 
 &lt;p&gt;Use your jME3 application (with all your scene, post-process, UI, &amp;hellip;) to render data from/to Blender.&lt;/p&gt;
 
-&lt;h2 id=&#34;on-your-project-myproject-1:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On your project (myproject)&lt;/h2&gt;
+&lt;h2 id=&#34;on-your-project-myproject-1&#34;&gt;On your project (myproject)&lt;/h2&gt;
 
 &lt;ol&gt;
-&lt;li&gt;add jme3_xbuf_loader as a depencencies, eg for gradle :&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;repositories {
+&lt;li&gt;add jme3_xbuf_loader as a depencencies, eg for gradle :
+~~~groovy
+repositories {
 	mavenLocal()
 	jcenter()
-	maven { url &amp;quot;http://updates.jmonkeyengine.org/maven/&amp;quot;}
-	maven { url &amp;quot;https://jitpack.io&amp;quot; }
-}
-
-def jme3_xbuf_version = &#39;213c6a499d&#39;
-
-dependencies {
-  compile &#39;org.xbuf.jme3_xbuf:jme3_xbuf_loader:${jme3_xbuf_version}&#39;
-  compile &#39;org.xbuf.jme3_xbuf:jme3_xbuf_remote:${jme3_xbuf_version}&#39;
-...
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ol&gt;
-&lt;li&gt;load your xbuf data into your jME app :&lt;/li&gt;
+	maven { url &amp;ldquo;&lt;a href=&#34;http://updates.jmonkeyengine.org/maven/&amp;quot;&#34;&gt;http://updates.jmonkeyengine.org/maven/&amp;quot;&lt;/a&gt;}
+	maven { url &amp;ldquo;&lt;a href=&#34;https://jitpack.io&amp;quot;&#34;&gt;https://jitpack.io&amp;quot;&lt;/a&gt; }
+}&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;import jme3_ext_remote_editor.AppState4RemoteCommand;
+&lt;p&gt;def jme3_xbuf_version = &amp;lsquo;213c6a499d&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;dependencies {
+  compile &amp;lsquo;org.xbuf.jme3_xbuf:jme3_xbuf_loader:${jme3_xbuf_version}&amp;rsquo;
+  compile &amp;lsquo;org.xbuf.jme3_xbuf:jme3_xbuf_remote:${jme3_xbuf_version}&amp;rsquo;
+&amp;hellip;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2. load your xbuf data into your jME app :
+~~~java
+import jme3_ext_remote_editor.AppState4RemoteCommand;
 import jme3_ext_xbuf.Xbuf;
 ...
 app.setPauseOnLostFocus(false); //&amp;lt;-- Required else remote application will not receive image (eg: blender freeze)
@@ -177,7 +171,7 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
 &lt;li&gt;run&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;on-blender-1:acce8be8b0123631e58130cc34d7f08e&#34;&gt;On Blender&lt;/h2&gt;
+&lt;h2 id=&#34;on-blender-1&#34;&gt;On Blender&lt;/h2&gt;
 
 &lt;p&gt;see Level 1 / On Blender&lt;/p&gt;
 </description>
@@ -185,15 +179,15 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
     
     <item>
       <title>FAQ</title>
-      <link>http://www.xbuf.org/faq/</link>
+      <link>http://xbuf.github.io/faq/</link>
       <pubDate>Wed, 18 Feb 2015 00:00:00 +0100</pubDate>
       
-      <guid>http://www.xbuf.org/faq/</guid>
+      <guid>http://xbuf.github.io/faq/</guid>
       <description>
 
-&lt;h1 id=&#34;what:4a1318da06786ac52626178ca960109e&#34;&gt;What &amp;hellip;&lt;/h1&gt;
+&lt;h1 id=&#34;what&#34;&gt;What &amp;hellip;&lt;/h1&gt;
 
-&lt;h2 id=&#34;what-are-the-units-coordinate-system:4a1318da06786ac52626178ca960109e&#34;&gt;What are the units, coordinate system ?&lt;/h2&gt;
+&lt;h2 id=&#34;what-are-the-units-coordinate-system&#34;&gt;What are the units, coordinate system ?&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Coordinate system : Right Handled
@@ -212,12 +206,12 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
 
 &lt;p&gt;I try to collect same data for game engine, tools, to help create importer/exporter. Help me to complete the &lt;a href=&#34;https://docs.google.com/spreadsheets/d/19FscoJzidZKF6Iqs1bqELv57Ds-t_dAbMD_XflrIUuk/edit?usp=sharing&#34;&gt;table&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;what-is-the-file-extension:4a1318da06786ac52626178ca960109e&#34;&gt;What is the file extension ?&lt;/h2&gt;
+&lt;h2 id=&#34;what-is-the-file-extension&#34;&gt;What is the file extension ?&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;.xbuf
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;what-is-the-future-of-the-format:4a1318da06786ac52626178ca960109e&#34;&gt;What is the future of the format ?&lt;/h2&gt;
+&lt;h2 id=&#34;what-is-the-future-of-the-format&#34;&gt;What is the future of the format ?&lt;/h2&gt;
 
 &lt;p&gt;I don&amp;rsquo;t know ;-)&lt;/p&gt;
 
@@ -229,9 +223,9 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
 &lt;li&gt;Define an archive format to store complementary data : textures, shaders, &amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;how:4a1318da06786ac52626178ca960109e&#34;&gt;How &amp;hellip;&lt;/h1&gt;
+&lt;h1 id=&#34;how&#34;&gt;How &amp;hellip;&lt;/h1&gt;
 
-&lt;h2 id=&#34;how-can-i-protect-my-content:4a1318da06786ac52626178ca960109e&#34;&gt;How can I protect my content ?&lt;/h2&gt;
+&lt;h2 id=&#34;how-can-i-protect-my-content&#34;&gt;How can I protect my content ?&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Change the file extension&lt;/li&gt;
@@ -246,9 +240,9 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&#34;why:4a1318da06786ac52626178ca960109e&#34;&gt;Why &amp;hellip;&lt;/h1&gt;
+&lt;h1 id=&#34;why&#34;&gt;Why &amp;hellip;&lt;/h1&gt;
 
-&lt;h2 id=&#34;why-not-opengex-http-opengex-org:4a1318da06786ac52626178ca960109e&#34;&gt;Why not &lt;a href=&#34;http://opengex.org/&#34;&gt;OpenGEX&lt;/a&gt; ?&lt;/h2&gt;
+&lt;h2 id=&#34;why-not-opengex-http-opengex-org&#34;&gt;Why not &lt;a href=&#34;http://opengex.org/&#34;&gt;OpenGEX&lt;/a&gt; ?&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Rxcept if you use &lt;a href=&#34;http://opengex.org/OpenGex-Import.zip&#34;&gt;OpenGEX Import Template&lt;/a&gt; (C++ only), it requires to write parser and low level writer, and writing good parser is hard.&lt;/li&gt;
@@ -256,14 +250,14 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
 &lt;li&gt;Importer should support several metrics, several orientations (Z up, Y up,&amp;hellip;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;why-not-gltf-https-github-com-khronosgroup-gltf:4a1318da06786ac52626178ca960109e&#34;&gt;Why not &lt;a href=&#34;https://github.com/KhronosGroup/glTF&#34;&gt;glTF&lt;/a&gt; ?&lt;/h2&gt;
+&lt;h2 id=&#34;why-not-gltf-https-github-com-khronosgroup-gltf&#34;&gt;Why not &lt;a href=&#34;https://github.com/KhronosGroup/glTF&#34;&gt;glTF&lt;/a&gt; ?&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Moving and heavy spec ;-)&lt;/li&gt;
 &lt;li&gt;Json based format requires to write &amp;ldquo;semantic&amp;rdquo; parser, converter.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;why-no-configurable-metrics-like-in-opengex:4a1318da06786ac52626178ca960109e&#34;&gt;Why no configurable metrics (like in OpenGEX) ?&lt;/h2&gt;
+&lt;h2 id=&#34;why-no-configurable-metrics-like-in-opengex&#34;&gt;Why no configurable metrics (like in OpenGEX) ?&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;To simplify the loader (less composition to implement loader, less confusion) : &lt;em&gt;&amp;ldquo;convention over configuration&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
@@ -271,7 +265,7 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
 &lt;li&gt;It&amp;rsquo;s the responsability of the exporter to write shareable data (from internal format to xbuf)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;why-no-configurable-up:4a1318da06786ac52626178ca960109e&#34;&gt;Why no configurable up ?&lt;/h2&gt;
+&lt;h2 id=&#34;why-no-configurable-up&#34;&gt;Why no configurable up ?&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;See &lt;em&gt;Why no configurable metrics (like in OpenGEX) ?&lt;/em&gt; (above).&lt;/li&gt;
@@ -280,7 +274,7 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
 
 &lt;p&gt;see discussion &lt;a href=&#34;https://github.com/KhronosGroup/glTF/issues/22&#34;&gt;glTF : unify scenes axis-up&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;why-no-transform-matrix-variant-of-rotation-scale:4a1318da06786ac52626178ca960109e&#34;&gt;Why no transform matrix, variant of Rotation, Scale ?&lt;/h2&gt;
+&lt;h2 id=&#34;why-no-transform-matrix-variant-of-rotation-scale&#34;&gt;Why no transform matrix, variant of Rotation, Scale ?&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;See &lt;em&gt;Why no configurable metrics (like in OpenGEX) ?&lt;/em&gt; (above).&lt;/li&gt;
@@ -292,11 +286,43 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
     </item>
     
     <item>
+      <title>Features</title>
+      <link>http://xbuf.github.io/features/</link>
+      <pubDate>Wed, 18 Feb 2015 00:00:00 +0100</pubDate>
+      
+      <guid>http://xbuf.github.io/features/</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Format&lt;/th&gt;
+    &lt;th&gt;Blender&lt;/th&gt;
+    &lt;th&gt;jME3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  {{ $url := &#34;data/features.cvs&#34; }}
+  {{ $sep := &#34;,&#34; }}
+  {{ range $i, $r := getCSV $sep $url }}
+    &lt;tr&gt;
+      &lt;td&gt;{{ index $r 0 }}&lt;/td&gt;
+      &lt;td&gt;{{ index $r 1 }}&lt;/td&gt;
+      &lt;td&gt;{{ index $r 1 }}&lt;/td&gt;
+      &lt;td&gt;{{ index $r 1 }}&lt;/td&gt;
+      &lt;td&gt;{{ index $r 1 }}&lt;/td&gt;
+    &lt;/tr&gt;
+  {{ end }}
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Extensions List</title>
-      <link>http://www.xbuf.org/extensions-list/</link>
+      <link>http://xbuf.github.io/extensions-list/</link>
       <pubDate>Mon, 16 Feb 2015 00:00:00 +0100</pubDate>
       
-      <guid>http://www.xbuf.org/extensions-list/</guid>
+      <guid>http://xbuf.github.io/extensions-list/</guid>
       <description>&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -328,13 +354,13 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
     
     <item>
       <title>Motivations</title>
-      <link>http://www.xbuf.org/motivations/</link>
+      <link>http://xbuf.github.io/motivations/</link>
       <pubDate>Mon, 16 Feb 2015 00:00:00 +0100</pubDate>
       
-      <guid>http://www.xbuf.org/motivations/</guid>
+      <guid>http://xbuf.github.io/motivations/</guid>
       <description>
 
-&lt;h1 id=&#34;why:535b77425920ce1473b8680ff1269b8a&#34;&gt;Why ?&lt;/h1&gt;
+&lt;h1 id=&#34;why&#34;&gt;Why ?&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;.proto is used as spec and to generate generator/parser for several languages. No need to write your own (you can if you want). And tool, game, engine spend less time on creating generator/parser. Developper only need to create adapter, converter into their own format (far easier than creating generator + parser).&lt;/li&gt;
@@ -352,7 +378,7 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
 &lt;li&gt;protobuf have an ecosystem, port, ide support,&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;comments:535b77425920ce1473b8680ff1269b8a&#34;&gt;Comments&lt;/h2&gt;
+&lt;h2 id=&#34;comments&#34;&gt;Comments&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;file are binary, not text.
@@ -383,32 +409,32 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
     
     <item>
       <title>Tools</title>
-      <link>http://www.xbuf.org/tools/</link>
+      <link>http://xbuf.github.io/tools/</link>
       <pubDate>Mon, 16 Feb 2015 00:00:00 +0100</pubDate>
       
-      <guid>http://www.xbuf.org/tools/</guid>
+      <guid>http://xbuf.github.io/tools/</guid>
       <description>
 
-&lt;h1 id=&#34;existing-tools-libraries:392b1cfe5865fa09a3eb545085be9682&#34;&gt;Existing Tools, Libraries, &amp;hellip;&lt;/h1&gt;
+&lt;h1 id=&#34;existing-tools-libraries&#34;&gt;Existing Tools, Libraries, &amp;hellip;&lt;/h1&gt;
 
-&lt;h2 id=&#34;game-engine-integration:392b1cfe5865fa09a3eb545085be9682&#34;&gt;Game Engine integration&lt;/h2&gt;
+&lt;h2 id=&#34;game-engine-integration&#34;&gt;Game Engine integration&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;[jme3_ext_remote_editor]() for &lt;a href=&#34;http://jmonkeyengine.org&#34;&gt;jMonkeyEngine&lt;/a&gt;, allow to receive commands and datas over socket to modify the scene. It also include a Loader for &amp;lsquo;.xbuf&amp;rsquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;3d-tools-integration:392b1cfe5865fa09a3eb545085be9682&#34;&gt;3D Tools integration&lt;/h2&gt;
+&lt;h2 id=&#34;3d-tools-integration&#34;&gt;3D Tools integration&lt;/h2&gt;
 
-&lt;h2 id=&#34;protobuf-tools:392b1cfe5865fa09a3eb545085be9682&#34;&gt;Protobuf tools&lt;/h2&gt;
+&lt;h2 id=&#34;protobuf-tools&#34;&gt;Protobuf tools&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;a list of languages and utilities for protobuf is available at &lt;a href=&#34;https://github.com/google/protobuf/wiki/Third-Party-Add-ons&#34;&gt;Third-Party-Add-ons&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;google, bing, &amp;hellip; ;-)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;ideas-for-tools:392b1cfe5865fa09a3eb545085be9682&#34;&gt;Ideas for Tools&lt;/h1&gt;
+&lt;h1 id=&#34;ideas-for-tools&#34;&gt;Ideas for Tools&lt;/h1&gt;
 
-&lt;h2 id=&#34;checker:392b1cfe5865fa09a3eb545085be9682&#34;&gt;Checker&lt;/h2&gt;
+&lt;h2 id=&#34;checker&#34;&gt;Checker&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;in a collection of datas (.xbuf) : verify that every ref points to existing id.&lt;/li&gt;
@@ -418,13 +444,13 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
 &lt;li&gt;in a datas (.xbuf) : verify that every rpath points to existing file in assets&amp;rsquo; folder.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;merge:392b1cfe5865fa09a3eb545085be9682&#34;&gt;Merge&lt;/h2&gt;
+&lt;h2 id=&#34;merge&#34;&gt;Merge&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;merge a collection of datas into a single datas + external assets&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;extractor:392b1cfe5865fa09a3eb545085be9682&#34;&gt;Extractor&lt;/h1&gt;
+&lt;h1 id=&#34;extractor&#34;&gt;Extractor&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;from a collection of datas (.xbuf) : extract Node and related data + assets into its own datas&lt;/li&gt;
@@ -432,7 +458,7 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
 &lt;li&gt;from a collection of datas (.xbuf) : list all assets (rpath)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;remapper:392b1cfe5865fa09a3eb545085be9682&#34;&gt;Remapper&lt;/h1&gt;
+&lt;h1 id=&#34;remapper&#34;&gt;Remapper&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;in a collection of datas (.xbuf) : rename id (and ref) (via regexp or conversion table or a generator)&lt;/li&gt;
@@ -443,10 +469,10 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
     
     <item>
       <title>API</title>
-      <link>http://www.xbuf.org/api/</link>
+      <link>http://xbuf.github.io/api/</link>
       <pubDate>Sun, 15 Feb 2015 00:00:00 +0100</pubDate>
       
-      <guid>http://www.xbuf.org/api/</guid>
+      <guid>http://xbuf.github.io/api/</guid>
       <description>
 
 &lt;blockquote&gt;
@@ -454,11 +480,11 @@ app.getStateManager().attach(new AppState4RemoteCommand(4242, new Xbuf(app.getAs
 IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h1 id=&#34;protocol-documentation:00e71df22262087fd8ad820708997657&#34;&gt;Protocol Documentation&lt;/h1&gt;
+&lt;h1 id=&#34;protocol-documentation&#34;&gt;Protocol Documentation&lt;/h1&gt;
 
 &lt;p&gt;&lt;a name=&#34;top&#34;/&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;table-of-contents:00e71df22262087fd8ad820708997657&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#animations_kf.proto&#34;&gt;animations_kf.proto&lt;/a&gt;
@@ -530,11 +556,11 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 &lt;p&gt;&lt;a name=&#34;animations_kf.proto&#34;/&gt;
 &lt;p align=&#34;right&#34;&gt;&lt;a href=&#34;#top&#34;&gt;Top&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;animations-kf-proto:00e71df22262087fd8ad820708997657&#34;&gt;animations_kf.proto&lt;/h2&gt;
+&lt;h2 id=&#34;animations-kf-proto&#34;&gt;animations_kf.proto&lt;/h2&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf_ext.AnimationKF&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;animationkf:00e71df22262087fd8ad820708997657&#34;&gt;AnimationKF&lt;/h3&gt;
+&lt;h3 id=&#34;animationkf&#34;&gt;AnimationKF&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -579,7 +605,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf_ext.BezierParams&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;bezierparams:00e71df22262087fd8ad820708997657&#34;&gt;BezierParams&lt;/h3&gt;
+&lt;h3 id=&#34;bezierparams&#34;&gt;BezierParams&lt;/h3&gt;
 
 &lt;p&gt;Bezier Params for a curve between P0(0, yp0)  and P1(1, yp1)
 / y are in the same range that value of KeyPoints&lt;/p&gt;
@@ -627,7 +653,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf_ext.Clip&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;clip:00e71df22262087fd8ad820708997657&#34;&gt;Clip&lt;/h3&gt;
+&lt;h3 id=&#34;clip&#34;&gt;Clip&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -658,7 +684,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf_ext.ColorKF&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;colorkf:00e71df22262087fd8ad820708997657&#34;&gt;ColorKF&lt;/h3&gt;
+&lt;h3 id=&#34;colorkf&#34;&gt;ColorKF&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -703,7 +729,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf_ext.KeyPoints&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;keypoints:00e71df22262087fd8ad820708997657&#34;&gt;KeyPoints&lt;/h3&gt;
+&lt;h3 id=&#34;keypoints&#34;&gt;KeyPoints&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -748,7 +774,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf_ext.QuaternionKF&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;quaternionkf:00e71df22262087fd8ad820708997657&#34;&gt;QuaternionKF&lt;/h3&gt;
+&lt;h3 id=&#34;quaternionkf&#34;&gt;QuaternionKF&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -793,7 +819,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf_ext.TransformKF&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;transformkf:00e71df22262087fd8ad820708997657&#34;&gt;TransformKF&lt;/h3&gt;
+&lt;h3 id=&#34;transformkf&#34;&gt;TransformKF&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -831,7 +857,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf_ext.Vec3KF&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;vec3kf:00e71df22262087fd8ad820708997657&#34;&gt;Vec3KF&lt;/h3&gt;
+&lt;h3 id=&#34;vec3kf&#34;&gt;Vec3KF&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -869,7 +895,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf_ext.KeyPoints.InterpolationFct&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;keypoints-interpolationfct:00e71df22262087fd8ad820708997657&#34;&gt;KeyPoints.InterpolationFct&lt;/h3&gt;
+&lt;h3 id=&#34;keypoints-interpolationfct&#34;&gt;KeyPoints.InterpolationFct&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -904,11 +930,11 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 &lt;p&gt;&lt;a name=&#34;custom_params.proto&#34;/&gt;
 &lt;p align=&#34;right&#34;&gt;&lt;a href=&#34;#top&#34;&gt;Top&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;custom-params-proto:00e71df22262087fd8ad820708997657&#34;&gt;custom_params.proto&lt;/h2&gt;
+&lt;h2 id=&#34;custom-params-proto&#34;&gt;custom_params.proto&lt;/h2&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf_ext.CustomParam&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;customparam:00e71df22262087fd8ad820708997657&#34;&gt;CustomParam&lt;/h3&gt;
+&lt;h3 id=&#34;customparam&#34;&gt;CustomParam&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1009,7 +1035,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf_ext.CustomParamList&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;customparamlist:00e71df22262087fd8ad820708997657&#34;&gt;CustomParamList&lt;/h3&gt;
+&lt;h3 id=&#34;customparamlist&#34;&gt;CustomParamList&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1041,11 +1067,11 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 &lt;p&gt;&lt;a name=&#34;cmds.proto&#34;/&gt;
 &lt;p align=&#34;right&#34;&gt;&lt;a href=&#34;#top&#34;&gt;Top&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;cmds-proto:00e71df22262087fd8ad820708997657&#34;&gt;cmds.proto&lt;/h2&gt;
+&lt;h2 id=&#34;cmds-proto&#34;&gt;cmds.proto&lt;/h2&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.ChangeAssetFolders&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;changeassetfolders:00e71df22262087fd8ad820708997657&#34;&gt;ChangeAssetFolders&lt;/h3&gt;
+&lt;h3 id=&#34;changeassetfolders&#34;&gt;ChangeAssetFolders&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1083,7 +1109,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Cmd&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;cmd:00e71df22262087fd8ad820708997657&#34;&gt;Cmd&lt;/h3&gt;
+&lt;h3 id=&#34;cmd&#34;&gt;Cmd&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1128,7 +1154,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.DeleteData&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;deletedata:00e71df22262087fd8ad820708997657&#34;&gt;DeleteData&lt;/h3&gt;
+&lt;h3 id=&#34;deletedata&#34;&gt;DeleteData&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1166,7 +1192,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.SetEye&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;seteye:00e71df22262087fd8ad820708997657&#34;&gt;SetEye&lt;/h3&gt;
+&lt;h3 id=&#34;seteye&#34;&gt;SetEye&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1225,7 +1251,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.SetEye.ProjMode&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;seteye-projmode:00e71df22262087fd8ad820708997657&#34;&gt;SetEye.ProjMode&lt;/h3&gt;
+&lt;h3 id=&#34;seteye-projmode&#34;&gt;SetEye.ProjMode&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1254,11 +1280,11 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 &lt;p&gt;&lt;a name=&#34;datas.proto&#34;/&gt;
 &lt;p align=&#34;right&#34;&gt;&lt;a href=&#34;#top&#34;&gt;Top&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;datas-proto:00e71df22262087fd8ad820708997657&#34;&gt;datas.proto&lt;/h2&gt;
+&lt;h2 id=&#34;datas-proto&#34;&gt;datas.proto&lt;/h2&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Attenuation&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;attenuation:00e71df22262087fd8ad820708997657&#34;&gt;Attenuation&lt;/h3&gt;
+&lt;h3 id=&#34;attenuation&#34;&gt;Attenuation&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1310,7 +1336,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.AttenuationInverse&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;attenuationinverse:00e71df22262087fd8ad820708997657&#34;&gt;AttenuationInverse&lt;/h3&gt;
+&lt;h3 id=&#34;attenuationinverse&#34;&gt;AttenuationInverse&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1355,7 +1381,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.AttenuationInverseSquare&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;attenuationinversesquare:00e71df22262087fd8ad820708997657&#34;&gt;AttenuationInverseSquare&lt;/h3&gt;
+&lt;h3 id=&#34;attenuationinversesquare&#34;&gt;AttenuationInverseSquare&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1407,7 +1433,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.AttenuationLinear&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;attenuationlinear:00e71df22262087fd8ad820708997657&#34;&gt;AttenuationLinear&lt;/h3&gt;
+&lt;h3 id=&#34;attenuationlinear&#34;&gt;AttenuationLinear&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1438,7 +1464,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.AttenuationSmooth&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;attenuationsmooth:00e71df22262087fd8ad820708997657&#34;&gt;AttenuationSmooth&lt;/h3&gt;
+&lt;h3 id=&#34;attenuationsmooth&#34;&gt;AttenuationSmooth&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1469,7 +1495,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Bone&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;bone:00e71df22262087fd8ad820708997657&#34;&gt;Bone&lt;/h3&gt;
+&lt;h3 id=&#34;bone&#34;&gt;Bone&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1507,7 +1533,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Color&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;color:00e71df22262087fd8ad820708997657&#34;&gt;Color&lt;/h3&gt;
+&lt;h3 id=&#34;color&#34;&gt;Color&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1552,7 +1578,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Data&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;data:00e71df22262087fd8ad820708997657&#34;&gt;Data&lt;/h3&gt;
+&lt;h3 id=&#34;data&#34;&gt;Data&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1618,7 +1644,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.FloatBuffer&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;floatbuffer:00e71df22262087fd8ad820708997657&#34;&gt;FloatBuffer&lt;/h3&gt;
+&lt;h3 id=&#34;floatbuffer&#34;&gt;FloatBuffer&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1649,7 +1675,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Geometry&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;geometry:00e71df22262087fd8ad820708997657&#34;&gt;Geometry&lt;/h3&gt;
+&lt;h3 id=&#34;geometry&#34;&gt;Geometry&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1687,7 +1713,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.IndexArray&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;indexarray:00e71df22262087fd8ad820708997657&#34;&gt;IndexArray&lt;/h3&gt;
+&lt;h3 id=&#34;indexarray&#34;&gt;IndexArray&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1711,7 +1737,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Light&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;light:00e71df22262087fd8ad820708997657&#34;&gt;Light&lt;/h3&gt;
+&lt;h3 id=&#34;light&#34;&gt;Light&lt;/h3&gt;
 
 &lt;p&gt;the direction of the light need by directional and spot is Z (forward like regular Node).
 / To use an other direction add relation to a Node and change the rotation of the Node (idem for translation).&lt;/p&gt;
@@ -1787,7 +1813,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Mat4&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;mat4:00e71df22262087fd8ad820708997657&#34;&gt;Mat4&lt;/h3&gt;
+&lt;h3 id=&#34;mat4&#34;&gt;Mat4&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1916,7 +1942,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Material&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;material:00e71df22262087fd8ad820708997657&#34;&gt;Material&lt;/h3&gt;
+&lt;h3 id=&#34;material&#34;&gt;Material&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2073,7 +2099,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Mesh&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;mesh:00e71df22262087fd8ad820708997657&#34;&gt;Mesh&lt;/h3&gt;
+&lt;h3 id=&#34;mesh&#34;&gt;Mesh&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2132,7 +2158,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Quaternion&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;quaternion:00e71df22262087fd8ad820708997657&#34;&gt;Quaternion&lt;/h3&gt;
+&lt;h3 id=&#34;quaternion&#34;&gt;Quaternion&lt;/h3&gt;
 
 &lt;p&gt;Quaternion should be normalized&lt;/p&gt;
 
@@ -2179,7 +2205,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Relation&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;relation:00e71df22262087fd8ad820708997657&#34;&gt;Relation&lt;/h3&gt;
+&lt;h3 id=&#34;relation&#34;&gt;Relation&lt;/h3&gt;
 
 &lt;p&gt;Define a Relation (edge, link) between two objects with an id
 / rules:
@@ -2222,7 +2248,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Skeleton&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;skeleton:00e71df22262087fd8ad820708997657&#34;&gt;Skeleton&lt;/h3&gt;
+&lt;h3 id=&#34;skeleton&#34;&gt;Skeleton&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2267,7 +2293,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.TObject&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;tobject:00e71df22262087fd8ad820708997657&#34;&gt;TObject&lt;/h3&gt;
+&lt;h3 id=&#34;tobject&#34;&gt;TObject&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2305,7 +2331,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Texture&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;texture:00e71df22262087fd8ad820708997657&#34;&gt;Texture&lt;/h3&gt;
+&lt;h3 id=&#34;texture&#34;&gt;Texture&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2350,7 +2376,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Texture2DInline&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;texture2dinline:00e71df22262087fd8ad820708997657&#34;&gt;Texture2DInline&lt;/h3&gt;
+&lt;h3 id=&#34;texture2dinline&#34;&gt;Texture2DInline&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2395,7 +2421,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Transform&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;transform:00e71df22262087fd8ad820708997657&#34;&gt;Transform&lt;/h3&gt;
+&lt;h3 id=&#34;transform&#34;&gt;Transform&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2433,7 +2459,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.UintBuffer&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;uintbuffer:00e71df22262087fd8ad820708997657&#34;&gt;UintBuffer&lt;/h3&gt;
+&lt;h3 id=&#34;uintbuffer&#34;&gt;UintBuffer&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2464,7 +2490,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Vec2&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;vec2:00e71df22262087fd8ad820708997657&#34;&gt;Vec2&lt;/h3&gt;
+&lt;h3 id=&#34;vec2&#34;&gt;Vec2&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2495,7 +2521,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Vec3&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;vec3:00e71df22262087fd8ad820708997657&#34;&gt;Vec3&lt;/h3&gt;
+&lt;h3 id=&#34;vec3&#34;&gt;Vec3&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2533,7 +2559,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Vec4&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;vec4:00e71df22262087fd8ad820708997657&#34;&gt;Vec4&lt;/h3&gt;
+&lt;h3 id=&#34;vec4&#34;&gt;Vec4&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2578,7 +2604,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.VertexArray&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;vertexarray:00e71df22262087fd8ad820708997657&#34;&gt;VertexArray&lt;/h3&gt;
+&lt;h3 id=&#34;vertexarray&#34;&gt;VertexArray&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2616,7 +2642,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Light.Kind&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;light-kind:00e71df22262087fd8ad820708997657&#34;&gt;Light.Kind&lt;/h3&gt;
+&lt;h3 id=&#34;light-kind&#34;&gt;Light.Kind&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2656,7 +2682,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Mesh.Primitive&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;mesh-primitive:00e71df22262087fd8ad820708997657&#34;&gt;Mesh.Primitive&lt;/h3&gt;
+&lt;h3 id=&#34;mesh-primitive&#34;&gt;Mesh.Primitive&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2702,7 +2728,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.Texture2DInline.Format&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;texture2dinline-format:00e71df22262087fd8ad820708997657&#34;&gt;Texture2DInline.Format&lt;/h3&gt;
+&lt;h3 id=&#34;texture2dinline-format&#34;&gt;Texture2DInline.Format&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2736,7 +2762,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;xbuf.VertexArray.Attrib&#34;/&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;vertexarray-attrib:00e71df22262087fd8ad820708997657&#34;&gt;VertexArray.Attrib&lt;/h3&gt;
+&lt;h3 id=&#34;vertexarray-attrib&#34;&gt;VertexArray.Attrib&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2836,7 +2862,7 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;&lt;a name=&#34;scalar-value-types&#34;/&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;scalar-value-types:00e71df22262087fd8ad820708997657&#34;&gt;Scalar Value Types&lt;/h2&gt;
+&lt;h2 id=&#34;scalar-value-types&#34;&gt;Scalar Value Types&lt;/h2&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -2976,10 +3002,10 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
     
     <item>
       <title>About</title>
-      <link>http://www.xbuf.org/about/</link>
+      <link>http://xbuf.github.io/about/</link>
       <pubDate>Sat, 28 Mar 2015 18:34:43 +0100</pubDate>
       
-      <guid>http://www.xbuf.org/about/</guid>
+      <guid>http://xbuf.github.io/about/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;xbuf&lt;/strong&gt; is an exchange format usable to store scene, models, animations, &amp;hellip; in file or to edit scene over network. It takes inspiration from :&lt;/p&gt;
@@ -2997,23 +3023,22 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 
 &lt;p&gt;License : &lt;a href=&#34;http://creativecommons.org/publicdomain/zero/1.0/&#34;&gt;Public domain (CC0-1.0)&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://xkcd.com/927/&#34;&gt;&lt;img src=&#34;http://imgs.xkcd.com/comics/standards.png&#34; alt=&#34;Standards&#34; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://xkcd.com/927/&#34;&gt;&lt;img src=&#34;http://imgs.xkcd.com/comics/standards.png&#34; alt=&#34;Standards&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;use-cases:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Use cases&lt;/h1&gt;
+&lt;h1 id=&#34;use-cases&#34;&gt;Use cases&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;create importer/exporter for modeler, game engine, tool (optimizer, asset pipes&amp;hellip;)&lt;/li&gt;
 &lt;li&gt;create network exchange format between connected tool (eg : modeler &amp;lt;-&amp;gt; game engine with realtime rendering)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;div class=&#34;flex-video&#34;&gt;
+&lt;div class=&#34;flex-video&#34;&gt;
   &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/3pQd65_dkeM&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
   &lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/p&gt;
 
-&lt;h1 id=&#34;download:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Download&lt;/h1&gt;
+
+&lt;h1 id=&#34;download&#34;&gt;Download&lt;/h1&gt;
 
 &lt;p&gt;You can download files from &lt;a href=&#34;https://bintray.com/package/files/davidb/maven/xbuf&#34;&gt;my repo&lt;/a&gt;&lt;/p&gt;
 
@@ -3024,17 +3049,17 @@ IMHO, the files *.proto are more readable. And always more uptodate.&lt;/p&gt;
 &lt;li&gt;xbuf-x.y.z.jar : the java archive with generated .class&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;documentation:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Documentation&lt;/h1&gt;
+&lt;h1 id=&#34;documentation&#34;&gt;Documentation&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.xbuf.org/motivations&#34;&gt;Motivations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.xbuf.org/faq&#34;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.xbuf.org/api&#34;&gt;API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.xbuf.org/extensions-list&#34;&gt;Extensions List&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.xbuf.org/tools&#34;&gt;Tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xbuf.github.io/motivations/&#34;&gt;Motivations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xbuf.github.io/faq/&#34;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xbuf.github.io/api/&#34;&gt;API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xbuf.github.io/extensions-list/&#34;&gt;Extensions List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xbuf.github.io/tools/&#34;&gt;Tools&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;links:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Links&lt;/h1&gt;
+&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;discussions about xbuf in communities:
