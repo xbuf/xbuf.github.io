@@ -10,7 +10,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   
-  <link rel="stylesheet" href="
+  <link rel="stylesheet" href="http://xbuf.github.io/css/foundation.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="http://xbuf.github.io/css/app.css" />
+
+  <link href='//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://xbuf.github.io/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://xbuf.github.io/favicon.ico">
+
+  
+  <script src="http://xbuf.github.io/js/vendor/modernizr.js"></script>
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="xbuf" />
+
+  <link rel="stylesheet" href="http://xbuf.github.io/css/prism.css" />
+
+</head>
+
 <body>
 <div class="">
 
@@ -2555,9 +2574,93 @@ IMHO, the files *.proto are more readable. And always more uptodate.</p>
 </div>
 
 <aside class="small-3 small-pull-9 columns sidebar">
-  <h1><img src="
+  <h1><img src="http://xbuf.github.io/img/xbuf_logo.svg#layer1" alt="xbuf"/></h1>
+  <p> An exchange format for 3D scenes, models, animations, … </p>
+  <div class="icon-bar vertical five-up">
+    
+  </div>
+  <div id="toc" class="small-12 columns">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#protocol-documentation">Protocol Documentation</a>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#animations-kf-proto">animations_kf.proto</a>
+<ul>
+<li><a href="#animationkf">AnimationKF</a></li>
+<li><a href="#bezierparams">BezierParams</a></li>
+<li><a href="#clip">Clip</a></li>
+<li><a href="#colorkf">ColorKF</a></li>
+<li><a href="#keypoints">KeyPoints</a></li>
+<li><a href="#quaternionkf">QuaternionKF</a></li>
+<li><a href="#transformkf">TransformKF</a></li>
+<li><a href="#vec3kf">Vec3KF</a></li>
+<li><a href="#keypoints-interpolationfct">KeyPoints.InterpolationFct</a></li>
+</ul></li>
+<li><a href="#custom-params-proto">custom_params.proto</a>
+<ul>
+<li><a href="#customparam">CustomParam</a></li>
+<li><a href="#customparamlist">CustomParamList</a></li>
+</ul></li>
+<li><a href="#cmds-proto">cmds.proto</a>
+<ul>
+<li><a href="#changeassetfolders">ChangeAssetFolders</a></li>
+<li><a href="#cmd">Cmd</a></li>
+<li><a href="#deletedata">DeleteData</a></li>
+<li><a href="#seteye">SetEye</a></li>
+<li><a href="#seteye-projmode">SetEye.ProjMode</a></li>
+</ul></li>
+<li><a href="#datas-proto">datas.proto</a>
+<ul>
+<li><a href="#attenuation">Attenuation</a></li>
+<li><a href="#attenuationinverse">AttenuationInverse</a></li>
+<li><a href="#attenuationinversesquare">AttenuationInverseSquare</a></li>
+<li><a href="#attenuationlinear">AttenuationLinear</a></li>
+<li><a href="#attenuationsmooth">AttenuationSmooth</a></li>
+<li><a href="#bone">Bone</a></li>
+<li><a href="#color">Color</a></li>
+<li><a href="#data">Data</a></li>
+<li><a href="#floatbuffer">FloatBuffer</a></li>
+<li><a href="#geometry">Geometry</a></li>
+<li><a href="#indexarray">IndexArray</a></li>
+<li><a href="#light">Light</a></li>
+<li><a href="#mat4">Mat4</a></li>
+<li><a href="#material">Material</a></li>
+<li><a href="#mesh">Mesh</a></li>
+<li><a href="#quaternion">Quaternion</a></li>
+<li><a href="#relation">Relation</a></li>
+<li><a href="#skeleton">Skeleton</a></li>
+<li><a href="#tobject">TObject</a></li>
+<li><a href="#texture">Texture</a></li>
+<li><a href="#texture2dinline">Texture2DInline</a></li>
+<li><a href="#transform">Transform</a></li>
+<li><a href="#uintbuffer">UintBuffer</a></li>
+<li><a href="#vec2">Vec2</a></li>
+<li><a href="#vec3">Vec3</a></li>
+<li><a href="#vec4">Vec4</a></li>
+<li><a href="#vertexarray">VertexArray</a></li>
+<li><a href="#light-kind">Light.Kind</a></li>
+<li><a href="#mesh-primitive">Mesh.Primitive</a></li>
+<li><a href="#texture2dinline-format">Texture2DInline.Format</a></li>
+<li><a href="#vertexarray-attrib">VertexArray.Attrib</a></li>
+</ul></li>
+<li><a href="#scalar-value-types">Scalar Value Types</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+
+<p>Public domain (CC0-1.0)</p>
+</aside>
+
 </div>
-<script src="
+<script src="http://xbuf.github.io/js/vendor/jquery.js"></script>
+<script src="http://xbuf.github.io/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+<script src="http://xbuf.github.io/js/prism.js"></script>
+
   </body>
 </html>
 
