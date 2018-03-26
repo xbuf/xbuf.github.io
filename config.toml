@@ -1,8 +1,8 @@
-baseurl = "http://xbuf.github.io/"
+baseURL = "http://xbuf.github.io/"
 languageCode = "en-us"
 title = "xbuf"
 theme = "site0"
-canonifyurls = true
+canonifyURLs = true
 
 [params]
   Description = "An exchange format for 3D scenes, models, animations, …"
