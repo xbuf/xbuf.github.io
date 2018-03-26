@@ -26,4 +26,4 @@ deploy:
         token: $GITHUB_TOKEN
         repo: xbuf/xbuf.github.io
         path: public
-        domain: www.xbuf.org
+        domain: xbuf.github.io
